@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/Mazes.dir/link.d CMakeFiles/Mazes.dir/src/main.cxx.o -o Mazes  /usr/lib64/libglfw.so.3.4 /usr/lib64/libGLX.so /usr/lib64/libOpenGL.so

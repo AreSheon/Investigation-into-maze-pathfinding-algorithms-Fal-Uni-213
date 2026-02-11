@@ -8,14 +8,13 @@
 using namespace std::this_thread;
 using namespace std::chrono;
 
-int delay = 0; // delay in ns for visualisation
+int delay = 1500000; // delay in ns for visualisation
 int lineWidth = 10;
 
 //mazeCreation
-const int size = 80;
+const int size = 40;
 bool visited[size * size];
 bool walls[size * size][2] = { 0 }; //0 for a wall, 1 for no wall left -> top
-
 
 //mazeSolving
 int start = 0; // start position
@@ -220,7 +219,7 @@ void aStarCalculate(int position) {
 
 void createMazeDFS() {
     int pos = 0;
-
+    
     for (int i = 0; i < size * size; i++) {
         visited[i] = 0;
     }
