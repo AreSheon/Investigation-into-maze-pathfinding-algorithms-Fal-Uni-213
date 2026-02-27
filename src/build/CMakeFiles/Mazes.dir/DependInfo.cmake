@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/laner/dev/gitRepos/mazePaper/src/main.cpp" "CMakeFiles/Mazes.dir/src/main.cpp.o" "gcc" "CMakeFiles/Mazes.dir/src/main.cpp.o.d"
+  "/home/laner/dev/gitRepos/mazePaper/src/main.cxx" "CMakeFiles/Mazes.dir/src/main.cxx.o" "gcc" "CMakeFiles/Mazes.dir/src/main.cxx.o.d"
+  "/home/laner/dev/gitRepos/mazePaper/src/scource/maze.cxx" "CMakeFiles/Mazes.dir/src/scource/maze.cxx.o" "gcc" "CMakeFiles/Mazes.dir/src/scource/maze.cxx.o.d"
   "" "Mazes" "gcc" "CMakeFiles/Mazes.dir/link.d"
   )
 

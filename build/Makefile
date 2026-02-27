@@ -153,6 +153,30 @@ src/main.cxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/main.cxx.s
 .PHONY : src/main.cxx.s
 
+src/scource/maze.o: src/scource/maze.cxx.o
+.PHONY : src/scource/maze.o
+
+# target to build an object file
+src/scource/maze.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/maze.cxx.o
+.PHONY : src/scource/maze.cxx.o
+
+src/scource/maze.i: src/scource/maze.cxx.i
+.PHONY : src/scource/maze.i
+
+# target to preprocess a source file
+src/scource/maze.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/maze.cxx.i
+.PHONY : src/scource/maze.cxx.i
+
+src/scource/maze.s: src/scource/maze.cxx.s
+.PHONY : src/scource/maze.s
+
+# target to generate assembly for a file
+src/scource/maze.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/maze.cxx.s
+.PHONY : src/scource/maze.cxx.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/scource/maze.o"
+	@echo "... src/scource/maze.i"
+	@echo "... src/scource/maze.s"
 .PHONY : help
 
 

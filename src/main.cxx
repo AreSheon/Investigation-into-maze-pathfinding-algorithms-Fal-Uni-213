@@ -4,6 +4,8 @@
 #include <time.h>
 #include <thread>
 #include <chrono>
+#include "headers/depth_first.hxx"
+//#include "scource/depth_first.cxx"
 
 using namespace std::this_thread;
 using namespace std::chrono;
@@ -15,6 +17,10 @@ int lineWidth = 10;
 const int size = 40;
 bool visited[size * size];
 bool walls[size * size][2] = { 0 }; //0 for a wall, 1 for no wall left -> top
+
+maze curMaze;
+
+
 
 //mazeSolving
 int start = 0; // start position
@@ -61,7 +67,10 @@ void connect(int pos1, int pos2) {
         }
     }
 }
-void randomdfs(int pos, int size) {
+
+//dfs is depth first search ---> recursive backtracker
+void randomdfs(int pos, int size) 
+{
 
     visited[pos] = 1;
     int next = pos + nextCell(pos, size);
@@ -335,7 +344,7 @@ int draw() {
     {
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
-        float gridSize = size;
+        float gridSize = curMaze.size;
         int maxPathIndex = 0;
 
         for (int j = 0; j < size; j++) {
@@ -384,7 +393,7 @@ int draw() {
                 glColor3f(0, 0, 0);
 
                 //vertical walls
-                if (walls[i + j * size][0] == 0) {
+                if (curMaze.walls[i + j * curMaze.size][0] == 0) {
                     for (int l = 1; l < lineWidth; l++){
                         glBegin(GL_LINES);
                         glVertex2f(-1 + (2 * i) / gridSize + 0.001 * l, 1 - (2 * j) / gridSize);
@@ -395,7 +404,7 @@ int draw() {
                 
 
                 //horizontal walls
-                if (walls[i + j * size][1] == 0) {
+                if (curMaze.walls[i + j * curMaze.size][1] == 0) {
                     for (int l = 1; l < lineWidth; l++){
                         glBegin(GL_LINES);
                         glVertex2f(-1 + (2 * i) / gridSize, 1 - (2 * j) / gridSize + 0.001 * l);
@@ -420,6 +429,9 @@ int draw() {
 
 int main(void)
 {
+    depth_first dp;
+    curMaze = dp;
+
     srand(time(NULL));
 
     //red is right hand
@@ -427,11 +439,13 @@ int main(void)
     std::thread drawMaze(draw);
 
     
-    createMazeDFS();
+    curMaze.createMaze();
     
-    solveMazeRH();
-    pos = start;
-    solveMazeAstar();
+
+    
+    //solveMazeRH();
+    //pos = start;
+    //solveMazeAstar();
 
     drawMaze.join();
     

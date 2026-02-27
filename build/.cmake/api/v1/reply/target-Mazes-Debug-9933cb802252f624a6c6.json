@@ -36,7 +36,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 15,
+				"line" : 17,
 				"parent" : 0
 			},
 			{
@@ -81,7 +81,8 @@
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				2
 			]
 		}
 	],
@@ -129,7 +130,15 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				2
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1
 			]
 		}
 	],
@@ -139,6 +148,17 @@
 			"backtrace" : 7,
 			"compileGroupIndex" : 0,
 			"path" : "src/main.cxx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 7,
+			"path" : "src/headers/maze.hxx",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 7,
+			"compileGroupIndex" : 0,
+			"path" : "src/scource/maze.cxx",
 			"sourceGroupIndex" : 0
 		}
 	],

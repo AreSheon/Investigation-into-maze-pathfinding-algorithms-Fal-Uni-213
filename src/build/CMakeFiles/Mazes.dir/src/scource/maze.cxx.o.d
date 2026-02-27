@@ -1,5 +1,5 @@
-CMakeFiles/Mazes.dir/src/main.cpp.o: \
- /home/laner/dev/gitRepos/mazePaper/src/main.cpp \
+CMakeFiles/Mazes.dir/src/scource/maze.cxx.o: \
+ /home/laner/dev/gitRepos/mazePaper/src/scource/maze.cxx \
  /usr/include/stdc-predef.h /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h \

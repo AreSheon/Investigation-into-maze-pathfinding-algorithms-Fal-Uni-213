@@ -10,7 +10,10 @@ add_executable(Mazes)
 target_sources(Mazes
     PRIVATE
         src/main.cxx
+        src/headers/maze.hxx
+        src/scource/maze.cxx
 )
 
 target_link_libraries(Mazes glfw)
 target_link_libraries(Mazes OpenGL::GL)
+

@@ -4,5 +4,11 @@
   "command": "/usr/bin/c++   -g -o CMakeFiles/Mazes.dir/src/main.cxx.o -c /home/laner/dev/gitRepos/mazePaper/src/main.cxx",
   "file": "/home/laner/dev/gitRepos/mazePaper/src/main.cxx",
   "output": "CMakeFiles/Mazes.dir/src/main.cxx.o"
+},
+{
+  "directory": "/home/laner/dev/gitRepos/mazePaper/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/Mazes.dir/src/scource/maze.cxx.o -c /home/laner/dev/gitRepos/mazePaper/src/scource/maze.cxx",
+  "file": "/home/laner/dev/gitRepos/mazePaper/src/scource/maze.cxx",
+  "output": "CMakeFiles/Mazes.dir/src/scource/maze.cxx.o"
 }
 ]

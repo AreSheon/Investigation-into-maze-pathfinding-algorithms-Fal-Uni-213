@@ -129,29 +129,53 @@ Mazes/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/build
 .PHONY : Mazes/fast
 
-src/main.o: src/main.cpp.o
+src/main.o: src/main.cxx.o
 .PHONY : src/main.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/main.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/main.cxx.o
+.PHONY : src/main.cxx.o
 
-src/main.i: src/main.cpp.i
+src/main.i: src/main.cxx.i
 .PHONY : src/main.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/main.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/main.cxx.i
+.PHONY : src/main.cxx.i
 
-src/main.s: src/main.cpp.s
+src/main.s: src/main.cxx.s
 .PHONY : src/main.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/main.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/main.cxx.s
+.PHONY : src/main.cxx.s
+
+src/scource/maze.o: src/scource/maze.cxx.o
+.PHONY : src/scource/maze.o
+
+# target to build an object file
+src/scource/maze.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/maze.cxx.o
+.PHONY : src/scource/maze.cxx.o
+
+src/scource/maze.i: src/scource/maze.cxx.i
+.PHONY : src/scource/maze.i
+
+# target to preprocess a source file
+src/scource/maze.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/maze.cxx.i
+.PHONY : src/scource/maze.cxx.i
+
+src/scource/maze.s: src/scource/maze.cxx.s
+.PHONY : src/scource/maze.s
+
+# target to generate assembly for a file
+src/scource/maze.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/maze.cxx.s
+.PHONY : src/scource/maze.cxx.s
 
 # Help Target
 help:
@@ -165,6 +189,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/scource/maze.o"
+	@echo "... src/scource/maze.i"
+	@echo "... src/scource/maze.s"
 .PHONY : help
 
 
