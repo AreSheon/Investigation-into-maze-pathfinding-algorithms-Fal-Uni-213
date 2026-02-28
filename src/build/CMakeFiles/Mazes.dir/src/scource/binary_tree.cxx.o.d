@@ -1,6 +1,9 @@
-CMakeFiles/Mazes.dir/src/main.cxx.o: \
- /home/laner/dev/gitRepos/mazePaper/src/main.cxx \
- /usr/include/stdc-predef.h /usr/include/GLFW/glfw3.h \
+CMakeFiles/Mazes.dir/src/scource/binary_tree.cxx.o: \
+ /home/laner/dev/gitRepos/mazePaper/src/scource/binary_tree.cxx \
+ /usr/include/stdc-predef.h \
+ /home/laner/dev/gitRepos/mazePaper/src/headers/binary_tree.hxx \
+ /home/laner/dev/gitRepos/mazePaper/src/headers/maze.hxx \
+ /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
@@ -145,7 +148,4 @@ CMakeFiles/Mazes.dir/src/main.cxx.o: \
  /usr/include/c++/15/bits/chrono.h /usr/include/c++/15/ratio \
  /usr/include/c++/15/cstdint /usr/include/c++/15/limits \
  /usr/include/c++/15/ctime /usr/include/c++/15/bits/parse_numbers.h \
- /usr/include/c++/15/chrono \
- /home/laner/dev/gitRepos/mazePaper/src/headers/maze.hxx \
- /home/laner/dev/gitRepos/mazePaper/src/headers/depth_first.hxx \
- /home/laner/dev/gitRepos/mazePaper/src/headers/binary_tree.hxx
+ /usr/include/c++/15/chrono

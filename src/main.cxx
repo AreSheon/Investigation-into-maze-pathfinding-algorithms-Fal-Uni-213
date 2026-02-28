@@ -4,7 +4,9 @@
 #include <time.h>
 #include <thread>
 #include <chrono>
-#include "headers/depth_first.hxx"
+#include "maze.hxx"
+#include "depth_first.hxx"
+#include "binary_tree.hxx"
 //#include "scource/depth_first.cxx"
 
 using namespace std::this_thread;
@@ -18,7 +20,7 @@ const int size = 40;
 bool visited[size * size];
 bool walls[size * size][2] = { 0 }; //0 for a wall, 1 for no wall left -> top
 
-maze curMaze;
+maze* curMaze;
 
 
 
@@ -344,17 +346,17 @@ int draw() {
     {
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
-        float gridSize = curMaze.size;
+        float gridSize = curMaze->size;
         int maxPathIndex = 0;
 
-        for (int j = 0; j < size; j++) {
-            for (int i = 0; i < size; i++) {
+        for (int j = 0; j < curMaze->size; j++) {
+            for (int i = 0; i < curMaze->size; i++) {
 
                 // j is y
                 // i is x
 
-                int position = i + j * size;
-                int cpathIndex = path[i + size * j];
+                int position = i + j * curMaze->size;
+                int cpathIndex = path[i + curMaze->size * j];
 
                 if (cpathIndex > maxPathIndex) {
                     maxPathIndex = cpathIndex;
@@ -393,7 +395,7 @@ int draw() {
                 glColor3f(0, 0, 0);
 
                 //vertical walls
-                if (curMaze.walls[i + j * curMaze.size][0] == 0) {
+                if (curMaze->walls[i + j * curMaze->size][0] == 0) {
                     for (int l = 1; l < lineWidth; l++){
                         glBegin(GL_LINES);
                         glVertex2f(-1 + (2 * i) / gridSize + 0.001 * l, 1 - (2 * j) / gridSize);
@@ -404,7 +406,7 @@ int draw() {
                 
 
                 //horizontal walls
-                if (curMaze.walls[i + j * curMaze.size][1] == 0) {
+                if (curMaze->walls[i + j * curMaze->size][1] == 0) {
                     for (int l = 1; l < lineWidth; l++){
                         glBegin(GL_LINES);
                         glVertex2f(-1 + (2 * i) / gridSize, 1 - (2 * j) / gridSize + 0.001 * l);
@@ -430,7 +432,8 @@ int draw() {
 int main(void)
 {
     depth_first dp;
-    curMaze = dp;
+    binary_tree bt;
+    curMaze = &bt;
 
     srand(time(NULL));
 
@@ -439,7 +442,7 @@ int main(void)
     std::thread drawMaze(draw);
 
     
-    curMaze.createMaze();
+    curMaze->createMaze();
     
 
     

@@ -1,30 +1,28 @@
-
+#pragma once
 
 class maze {
 
 public:
   
-  //maze(){
+    maze() = default;
+    virtual ~maze() = default;
 
- // }
-  //~maze(){
-
- // }
-
-  // just globally set for all mazes
+    // just globally set for all mazes
     static const int size = 30;
-    int delay = 1500000; // delay in ns for visualisation
+    int delay = 15000000; // delay in ns for visualisation
   
-    bool visited[size * size];
+    bool visited[size * size]= {};
     
-    bool walls[size * size][2]; //0 for a wall, 1 for no wall left -> top
+    bool walls[size * size][2] = { 0 }; //0 for a wall, 1 for no wall left -> top
  
 
 
 protected:
 
 
-  virtual int nextCell(int pos, int size);
+  virtual int nextCell(int pos, int size){
+    return 0;
+  }
 
   /**connect 2 cells
    * 
@@ -49,7 +47,9 @@ protected:
     }
 }
 
-virtual void genAlgorithm(int pos, int size);
+virtual void genAlgorithm(int pos, int size){
+
+}
 
 public:
 

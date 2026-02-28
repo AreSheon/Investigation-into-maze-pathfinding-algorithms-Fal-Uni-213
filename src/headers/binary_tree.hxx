@@ -2,12 +2,11 @@
 
 #include "maze.hxx"
 
-class depth_first:public maze
-{
-public:
+class binary_tree: public maze{
 
-    depth_first() = default;
-    ~depth_first() = default;
+public:
+    binary_tree() = default;
+    ~binary_tree() = default;
 
 protected:
     int nextCell(int pos, int size) override;
@@ -15,3 +14,4 @@ protected:
     void genAlgorithm(int pos, int size) override;
 
 };
+

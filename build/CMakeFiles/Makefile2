@@ -85,12 +85,12 @@ clean: CMakeFiles/Mazes.dir/clean
 CMakeFiles/Mazes.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/laner/dev/gitRepos/mazePaper/build/CMakeFiles --progress-num=1,2,3 "Built target Mazes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/laner/dev/gitRepos/mazePaper/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target Mazes"
 .PHONY : CMakeFiles/Mazes.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Mazes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/laner/dev/gitRepos/mazePaper/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/laner/dev/gitRepos/mazePaper/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Mazes.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/laner/dev/gitRepos/mazePaper/build/CMakeFiles 0
 .PHONY : CMakeFiles/Mazes.dir/rule
@@ -102,7 +102,7 @@ Mazes: CMakeFiles/Mazes.dir/rule
 # codegen rule for target.
 CMakeFiles/Mazes.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/laner/dev/gitRepos/mazePaper/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target Mazes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/laner/dev/gitRepos/mazePaper/build/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target Mazes"
 .PHONY : CMakeFiles/Mazes.dir/codegen
 
 # clean rule for target.

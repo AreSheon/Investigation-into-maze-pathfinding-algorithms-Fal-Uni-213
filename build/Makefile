@@ -153,6 +153,54 @@ src/main.cxx.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/main.cxx.s
 .PHONY : src/main.cxx.s
 
+src/scource/binary_tree.o: src/scource/binary_tree.cxx.o
+.PHONY : src/scource/binary_tree.o
+
+# target to build an object file
+src/scource/binary_tree.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/binary_tree.cxx.o
+.PHONY : src/scource/binary_tree.cxx.o
+
+src/scource/binary_tree.i: src/scource/binary_tree.cxx.i
+.PHONY : src/scource/binary_tree.i
+
+# target to preprocess a source file
+src/scource/binary_tree.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/binary_tree.cxx.i
+.PHONY : src/scource/binary_tree.cxx.i
+
+src/scource/binary_tree.s: src/scource/binary_tree.cxx.s
+.PHONY : src/scource/binary_tree.s
+
+# target to generate assembly for a file
+src/scource/binary_tree.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/binary_tree.cxx.s
+.PHONY : src/scource/binary_tree.cxx.s
+
+src/scource/depth_first.o: src/scource/depth_first.cxx.o
+.PHONY : src/scource/depth_first.o
+
+# target to build an object file
+src/scource/depth_first.cxx.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/depth_first.cxx.o
+.PHONY : src/scource/depth_first.cxx.o
+
+src/scource/depth_first.i: src/scource/depth_first.cxx.i
+.PHONY : src/scource/depth_first.i
+
+# target to preprocess a source file
+src/scource/depth_first.cxx.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/depth_first.cxx.i
+.PHONY : src/scource/depth_first.cxx.i
+
+src/scource/depth_first.s: src/scource/depth_first.cxx.s
+.PHONY : src/scource/depth_first.s
+
+# target to generate assembly for a file
+src/scource/depth_first.cxx.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/depth_first.cxx.s
+.PHONY : src/scource/depth_first.cxx.s
+
 src/scource/maze.o: src/scource/maze.cxx.o
 .PHONY : src/scource/maze.o
 
@@ -189,6 +237,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/scource/binary_tree.o"
+	@echo "... src/scource/binary_tree.i"
+	@echo "... src/scource/binary_tree.s"
+	@echo "... src/scource/depth_first.o"
+	@echo "... src/scource/depth_first.i"
+	@echo "... src/scource/depth_first.s"
 	@echo "... src/scource/maze.o"
 	@echo "... src/scource/maze.i"
 	@echo "... src/scource/maze.s"

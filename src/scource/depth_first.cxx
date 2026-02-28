@@ -11,23 +11,41 @@ using namespace std::chrono;
 
 int depth_first::nextCell(int pos, int size)
 {
+    //i = x + width*y;
     
+    //genned from top left = 0,0
+
     int optionCount = 0;
     int options[4];
 
-    if (pos > size) { if (visited[pos - size] == 0) {options[optionCount] = -size; optionCount++;} }
-    if ((pos + 1) % size != 0) { if (visited[pos + 1] == 0) {options[optionCount] = 1; optionCount++; } }
-    if (pos < size * (size - 1)) { if (visited[pos + size] == 0) {options[optionCount] = size; optionCount++; } }
-    if (pos % size != 0) { if (visited[pos - 1] == 0) {options[optionCount] = -1; optionCount++; } }
+
+    //these are the directions?
+    //down
+    if (pos > size) //is it above row 1
+    { if (visited[pos - size] == 0) //reduce y by 1(width is size)
+        {options[optionCount] = -size; optionCount++;} }
+    //left
+    if ((pos + 1) % size != 0) //increase x by 1. is it at the end of a row
+    { if (visited[pos + 1] == 0)
+        {options[optionCount] = 1; optionCount++; } }
+    //up
+    if (pos < size * (size - 1)) //is up availiable
+    { if (visited[pos + size] == 0) 
+        {options[optionCount] = size; optionCount++; } }
+    //right
+    if (pos % size != 0) //
+    { if (visited[pos - 1] == 0) 
+        {options[optionCount] = -1; optionCount++; } }
 
     if (optionCount == 0) { return 0; };
 
-    return (options[rand() % optionCount]);
+    return (options[rand() % optionCount]); //random direction
 }
 
 void depth_first::genAlgorithm(int pos, int size)
 {
      visited[pos] = 1;
+
     int next = pos + nextCell(pos, size);
 
     while (next != pos) {

@@ -7,11 +7,13 @@ find_package(OpenGL REQUIRED)
 
 add_executable(Mazes)
 
+target_include_directories(Mazes PUBLIC src/headers)#where are the headers stored
 target_sources(Mazes
     PRIVATE
         src/main.cxx
-        src/headers/maze.hxx
         src/scource/maze.cxx
+        src/scource/depth_first.cxx
+        src/scource/binary_tree.cxx
 )
 
 target_link_libraries(Mazes glfw)

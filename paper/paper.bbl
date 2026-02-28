@@ -57,6 +57,71 @@
       \field{year}{2015}
       \keyw{Computer algorithms,Computer programming,Data processing,Maze puzzles}
     \endentry
+    \entry{vijaya_analysis_2024}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=169abfa4ec0c1b5ca98b58814bf85beb}{%
+           family={Vijaya},
+           familyi={V\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=781f9e7fca5de348de45e8e513f085c9}{%
+           family={Gopu},
+           familyi={G\bibinitperiod},
+           given={Arunkumar},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fa44e7ee6996ca7337a3807f73d67264}{%
+           family={Vinayak},
+           familyi={V\bibinitperiod},
+           given={K\bibnamedelima V\bibnamedelimb S\bibnamedelima G},
+           giveni={K\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=a0de4f93609f427e8aaa223ce1eb2399}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Thakur\bibnamedelima Jaideep},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=513da97218a0178bc46f7c5df6accab3}{%
+           family={Malhotra},
+           familyi={M\bibinitperiod},
+           given={Kanika},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{a38a4adbc06ac65a5d66e26822782520}
+      \strng{fullhash}{14acbbc12d3994ed85861eb3da453c15}
+      \strng{fullhashraw}{14acbbc12d3994ed85861eb3da453c15}
+      \strng{bibnamehash}{a38a4adbc06ac65a5d66e26822782520}
+      \strng{authorbibnamehash}{a38a4adbc06ac65a5d66e26822782520}
+      \strng{authornamehash}{a38a4adbc06ac65a5d66e26822782520}
+      \strng{authorfullhash}{14acbbc12d3994ed85861eb3da453c15}
+      \strng{authorfullhashraw}{14acbbc12d3994ed85861eb3da453c15}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Procedural content generation plays a crucial role in modern game development, offering efficient methods for creating intricate mazes, a prime example of its utility. However, when it comes to homemade maze generation, there’s often a limitation in providing the necessary diversity of mazes to maintain player engagement. Predictability can creep in, diminishing the player’s experience. In this composition, we embark on a comprehensive exploration of three introductory 2-D maze-generation algorithms, firstly, DFS (Depth-First Search), secondly, Recursive description, and lastly Prim’s-Method algorithm. Rather than merely analyzing these algorithms, our focus is on addressing their inherent drawbacks. Specifically, we aim to find solutions to enhance their utility in game development, particularly in terms of improving path lengths and increasing the diversity of generated mazes. In essence, procedural content generation, as exemplified by maze generation algorithms, serves as an indispensable tool for game designers seeking not only to understand the limitations but also to find creative solutions that strike a balance between generating engaging content and maintaining gameplay diversity.}
+      \field{booktitle}{2024 5th {International} {Conference} on {Innovative} {Trends} in {Information} {Technology} ({ICITIIT})}
+      \field{month}{3}
+      \field{title}{Analysis of {Maze} {Generation} {Algorithms}}
+      \field{urlday}{16}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICITIIT61487.2024.10580178
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/home/laner/Zotero/storage/L7YCZFU3/Vijaya et al. - 2024 - Analysis of Maze Generation Algorithms.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/10580178
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/10580178
+      \endverb
+      \keyw{Complexity theory,Depth First Hunt,Layout,Market research,Measurement,Prediction algorithms,Prim’s Algorithm,Procedural content generation,Procedural generation,Recursive description,Scalability}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
