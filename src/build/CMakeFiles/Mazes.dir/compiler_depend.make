@@ -4,6 +4,7 @@
 CMakeFiles/Mazes.dir/src/main.cxx.o: /home/laner/dev/gitRepos/mazePaper/src/main.cxx \
   /home/laner/dev/gitRepos/mazePaper/src/headers/binary_tree.hxx \
   /home/laner/dev/gitRepos/mazePaper/src/headers/depth_first.hxx \
+  /home/laner/dev/gitRepos/mazePaper/src/headers/general_settings.h \
   /home/laner/dev/gitRepos/mazePaper/src/headers/maze.hxx \
   /usr/include/GL/gl.h \
   /usr/include/GL/glext.h \
@@ -227,6 +228,7 @@ CMakeFiles/Mazes.dir/src/main.cxx.o: /home/laner/dev/gitRepos/mazePaper/src/main
 
 CMakeFiles/Mazes.dir/src/scource/binary_tree.cxx.o: /home/laner/dev/gitRepos/mazePaper/src/scource/binary_tree.cxx \
   /home/laner/dev/gitRepos/mazePaper/src/headers/binary_tree.hxx \
+  /home/laner/dev/gitRepos/mazePaper/src/headers/general_settings.h \
   /home/laner/dev/gitRepos/mazePaper/src/headers/maze.hxx \
   /usr/include/GL/gl.h \
   /usr/include/GL/glext.h \
@@ -450,6 +452,7 @@ CMakeFiles/Mazes.dir/src/scource/binary_tree.cxx.o: /home/laner/dev/gitRepos/maz
 
 CMakeFiles/Mazes.dir/src/scource/depth_first.cxx.o: /home/laner/dev/gitRepos/mazePaper/src/scource/depth_first.cxx \
   /home/laner/dev/gitRepos/mazePaper/src/headers/depth_first.hxx \
+  /home/laner/dev/gitRepos/mazePaper/src/headers/general_settings.h \
   /home/laner/dev/gitRepos/mazePaper/src/headers/maze.hxx \
   /usr/include/GL/gl.h \
   /usr/include/GL/glext.h \
@@ -1074,6 +1077,8 @@ CMakeFiles/Mazes.dir/src/main.cxx.o:
 
 /usr/include/c++/15/bits/stl_algobase.h:
 
+/usr/include/c++/15/bits/std_thread.h:
+
 /usr/include/linux/errno.h:
 
 /usr/include/c++/15/bits/invoke.h:
@@ -1188,14 +1193,6 @@ CMakeFiles/Mazes.dir/src/scource/maze.cxx.o:
 
 /usr/include/asm-generic/errno.h:
 
-/usr/include/c++/15/bits/streambuf.tcc:
-
-/usr/include/bits/types/clockid_t.h:
-
-/lib64/libm.so.6:
-
-/usr/include/bits/atomic_wide_counter.h:
-
 /usr/include/bits/stdlib-float.h:
 
 /usr/include/bits/time64.h:
@@ -1220,14 +1217,6 @@ CMakeFiles/Mazes.dir/src/scource/maze.cxx.o:
 
 /usr/include/bits/pthreadtypes-arch.h:
 
-/usr/include/c++/15/x86_64-redhat-linux/bits/gthr.h:
-
-/usr/include/c++/15/type_traits:
-
-/usr/include/bits/floatn.h:
-
-/usr/include/c++/15/bits/refwrap.h:
-
 /usr/include/c++/15/cwchar:
 
 /usr/include/c++/15/bits/stl_function.h:
@@ -1239,6 +1228,14 @@ CMakeFiles/Mazes.dir/src/scource/maze.cxx.o:
 /usr/include/bits/libc-header-start.h:
 
 /home/laner/dev/gitRepos/mazePaper/src/main.cxx:
+
+/usr/include/c++/15/x86_64-redhat-linux/bits/gthr.h:
+
+/usr/include/c++/15/type_traits:
+
+/usr/include/c++/15/bits/refwrap.h:
+
+/usr/include/bits/floatn.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -1255,6 +1252,14 @@ CMakeFiles/Mazes.dir/src/scource/maze.cxx.o:
 /usr/include/bits/endianness.h:
 
 /usr/include/bits/locale.h:
+
+/lib64/libm.so.6:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/c++/15/bits/streambuf.tcc:
+
+/usr/include/bits/types/clockid_t.h:
 
 /usr/include/wctype.h:
 
@@ -1283,6 +1288,8 @@ CMakeFiles/Mazes.dir/src/scource/maze.cxx.o:
 /usr/include/bits/types/sigset_t.h:
 
 /usr/include/stdint.h:
+
+/home/laner/dev/gitRepos/mazePaper/src/headers/general_settings.h:
 
 /usr/include/c++/15/bits/basic_ios.h:
 
@@ -1419,8 +1426,6 @@ CMakeFiles/Mazes.dir/src/scource/maze.cxx.o:
 /usr/include/c++/15/bits/ostream.tcc:
 
 /usr/include/c++/15/bits/postypes.h:
-
-/usr/include/c++/15/bits/std_thread.h:
 
 /usr/include/c++/15/bits/exception_defines.h:
 

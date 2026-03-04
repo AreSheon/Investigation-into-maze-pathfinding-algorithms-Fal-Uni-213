@@ -3,6 +3,7 @@ CMakeFiles/Mazes.dir/src/scource/depth_first.cxx.o: \
  /usr/include/stdc-predef.h \
  /home/laner/dev/gitRepos/mazePaper/src/headers/depth_first.hxx \
  /home/laner/dev/gitRepos/mazePaper/src/headers/maze.hxx \
+ /home/laner/dev/gitRepos/mazePaper/src/headers/general_settings.h \
  /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h \

@@ -147,5 +147,6 @@ CMakeFiles/Mazes.dir/src/main.cxx.o: \
  /usr/include/c++/15/ctime /usr/include/c++/15/bits/parse_numbers.h \
  /usr/include/c++/15/chrono \
  /home/laner/dev/gitRepos/mazePaper/src/headers/maze.hxx \
+ /home/laner/dev/gitRepos/mazePaper/src/headers/general_settings.h \
  /home/laner/dev/gitRepos/mazePaper/src/headers/depth_first.hxx \
  /home/laner/dev/gitRepos/mazePaper/src/headers/binary_tree.hxx

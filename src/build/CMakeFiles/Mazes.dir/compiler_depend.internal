@@ -5,6 +5,7 @@ CMakeFiles/Mazes.dir/src/main.cxx.o
  /home/laner/dev/gitRepos/mazePaper/src/main.cxx
  /home/laner/dev/gitRepos/mazePaper/src/headers/binary_tree.hxx
  /home/laner/dev/gitRepos/mazePaper/src/headers/depth_first.hxx
+ /home/laner/dev/gitRepos/mazePaper/src/headers/general_settings.h
  /home/laner/dev/gitRepos/mazePaper/src/headers/maze.hxx
  /usr/include/GL/gl.h
  /usr/include/GL/glext.h
@@ -229,6 +230,7 @@ CMakeFiles/Mazes.dir/src/main.cxx.o
 CMakeFiles/Mazes.dir/src/scource/binary_tree.cxx.o
  /home/laner/dev/gitRepos/mazePaper/src/scource/binary_tree.cxx
  /home/laner/dev/gitRepos/mazePaper/src/headers/binary_tree.hxx
+ /home/laner/dev/gitRepos/mazePaper/src/headers/general_settings.h
  /home/laner/dev/gitRepos/mazePaper/src/headers/maze.hxx
  /usr/include/GL/gl.h
  /usr/include/GL/glext.h
@@ -453,6 +455,7 @@ CMakeFiles/Mazes.dir/src/scource/binary_tree.cxx.o
 CMakeFiles/Mazes.dir/src/scource/depth_first.cxx.o
  /home/laner/dev/gitRepos/mazePaper/src/scource/depth_first.cxx
  /home/laner/dev/gitRepos/mazePaper/src/headers/depth_first.hxx
+ /home/laner/dev/gitRepos/mazePaper/src/headers/general_settings.h
  /home/laner/dev/gitRepos/mazePaper/src/headers/maze.hxx
  /usr/include/GL/gl.h
  /usr/include/GL/glext.h

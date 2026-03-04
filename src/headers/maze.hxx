@@ -1,5 +1,9 @@
 #pragma once
 
+#include "general_settings.h"
+
+using namespace general_settings;
+
 class maze {
 
 public:
@@ -7,9 +11,7 @@ public:
     maze() = default;
     virtual ~maze() = default;
 
-    // just globally set for all mazes
-    static const int size = 30;
-    int delay = 15000000; // delay in ns for visualisation
+    //int delay = 15000000; // delay in ns for visualisation
   
     bool visited[size * size]= {};
     

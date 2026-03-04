@@ -12,13 +12,7 @@
 using namespace std::this_thread;
 using namespace std::chrono;
 
-int delay = 1500000; // delay in ns for visualisation
 int lineWidth = 10;
-
-//mazeCreation
-const int size = 40;
-bool visited[size * size];
-bool walls[size * size][2] = { 0 }; //0 for a wall, 1 for no wall left -> top
 
 maze* curMaze;
 
@@ -36,58 +30,9 @@ int pathIndex = 0;
 int emptyWalls[4] = { 0 }; //0 not empty, !0 empty
 int emptyWallsCount = 0;
 
-//mazeCreation
-int nextCell(int pos, int size) {
-
-    int optionCount = 0;
-    int options[4];
-
-    if (pos > size) { if (visited[pos - size] == 0) {options[optionCount] = -size; optionCount++;} }
-    if ((pos + 1) % size != 0) { if (visited[pos + 1] == 0) {options[optionCount] = 1; optionCount++; } }
-    if (pos < size * (size - 1)) { if (visited[pos + size] == 0) {options[optionCount] = size; optionCount++; } }
-    if (pos % size != 0) { if (visited[pos - 1] == 0) {options[optionCount] = -1; optionCount++; } }
-
-    if (optionCount == 0) { return 0; };
-
-    return (options[rand() % optionCount]);
-}
-void connect(int pos1, int pos2) {
-    if (pos2 > pos1) {
-        if (pos2 == pos1 + 1) {
-            walls[pos2][0] = 1;
-        }
-        else {
-            walls[pos2][1] = 1;
-        }
-    }
-    else {
-        if (pos1 == pos2 + 1) {
-            walls[pos1][0] = 1;
-        }
-        else {
-            walls[pos1][1] = 1;
-        }
-    }
-}
-
-//dfs is depth first search ---> recursive backtracker
-void randomdfs(int pos, int size) 
-{
-
-    visited[pos] = 1;
-    int next = pos + nextCell(pos, size);
-
-    while (next != pos) {
-        sleep_for(nanoseconds(delay)); //delay to watch maze getting created
-        connect(pos, next);
-        pos = next;
-        randomdfs(pos, size);
-        next = pos + nextCell(pos, size);
-    }
-}
 
 //mazeSolving
-bool move() {
+bool move(maze* curMaze) {
     
     char dir = '/';
 
@@ -107,7 +52,7 @@ bool move() {
     switch (dir) {
     case 'E':   
         if ((pos + 1) % size != 0) {
-            if (walls[pos + 1][0] == 1) {
+            if (curMaze->walls[pos + 1][0] == 1) {
                 //prevPos = pos;
                 pos += 1;
 
@@ -123,7 +68,7 @@ bool move() {
     break;
     case 'S':
         if (pos < size * (size - 1)) {
-            if (walls[pos + size][1] == 1) {
+            if (curMaze->walls[pos + size][1] == 1) {
                // prevPos = pos;
                 pos += size;
 
@@ -139,7 +84,7 @@ bool move() {
     break;
     case'W':  
         if (pos % size != 0) {
-            if (walls[pos][0] == 1) {
+            if (curMaze->walls[pos][0] == 1) {
                // prevPos = pos;
                 pos -= 1;
 
@@ -155,7 +100,7 @@ bool move() {
     break;
     case 'N':  
         if (pos >= size) {
-            if (walls[pos][1] == 1) {
+            if (curMaze->walls[pos][1] == 1) {
               //  prevPos = pos;
                 pos -= size;
 
@@ -175,7 +120,7 @@ bool move() {
     }
 }
 //utility function that gets the number of empty walls and adds the path to the empty walls array
-void getEmptyWalls() {
+void getEmptyWalls(maze* curMaze) {
     emptyWallsCount = 0;
 
     for (int i = 0; i < 4; i++) {
@@ -184,7 +129,7 @@ void getEmptyWalls() {
 
     //north wall
     if (pos >= size) {
-        if (walls[pos][1]) {
+        if (curMaze->walls[pos][1]) {
             emptyWalls[emptyWallsCount] = -size;
             emptyWallsCount++;
         }
@@ -192,7 +137,7 @@ void getEmptyWalls() {
     
     //east wall
     if ((pos + 1) % size != 0) {
-        if (walls[pos + 1][0]) {
+        if (curMaze->walls[pos + 1][0]) {
             emptyWalls[emptyWallsCount] = 1;
             emptyWallsCount++;
         }
@@ -200,7 +145,7 @@ void getEmptyWalls() {
 
     //south wall
     if (pos < size * (size - 1)) {
-        if (walls[pos + size][1]) {
+        if (curMaze->walls[pos + size][1]) {
             emptyWalls[emptyWallsCount] = size;
             emptyWallsCount++;
         }
@@ -208,7 +153,7 @@ void getEmptyWalls() {
     
     //west wall
     if (pos % size != 0) {
-        if (walls[pos][0]) {
+        if (curMaze->walls[pos][0]) {
             emptyWalls[emptyWallsCount] = -1;
             emptyWallsCount++;
         }
@@ -228,37 +173,28 @@ void aStarCalculate(int position) {
     }  
 }
 
-void createMazeDFS() {
-    int pos = 0;
-    
-    for (int i = 0; i < size * size; i++) {
-        visited[i] = 0;
-    }
 
-    randomdfs(pos, size);
-}
-
-void solveMazeRH() {
+void solveMazeRH(maze* curMaze) {
     path[0] = 1;
     rot = 1; // look south
 
     while (pos != goal) {
         rot++;
 
-        if (!move()) {
+        if (!move(curMaze)) {
             rot--;
-            if (!move()) {
+            if (!move(curMaze)) {
                 rot--;
-                if (!move()) {
+                if (!move(curMaze)) {
                     rot--;
-                    move();
+                    move(curMaze);
                 }
             }
         }
         sleep_for(nanoseconds(delay)); //delay to watch maze getting solved
     }
 }
-void solveMazeAstar() {
+void solveMazeAstar(maze* curMaze) {
 
     //set everything to 0
     for (int i = 0; i < size * size; i++) {
@@ -280,7 +216,7 @@ void solveMazeAstar() {
         int minh = size * size;
         int nextCell = start;
 
-        getEmptyWalls();
+        getEmptyWalls(curMaze);
 
         //iterate through all neighbours
         for (int i = 0; i < emptyWallsCount; i++) {
@@ -331,7 +267,7 @@ int draw() {
         return -1;
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(1200,1200, "Maze Solver", NULL, NULL);
+    window = glfwCreateWindow(700,700, "Maze Solver", NULL, NULL);
     if (!window)
     {
         glfwTerminate();
@@ -346,17 +282,17 @@ int draw() {
     {
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
-        float gridSize = curMaze->size;
+        float gridSize = size;
         int maxPathIndex = 0;
 
-        for (int j = 0; j < curMaze->size; j++) {
-            for (int i = 0; i < curMaze->size; i++) {
+        for (int j = 0; j < size; j++) {
+            for (int i = 0; i < size; i++) {
 
                 // j is y
                 // i is x
 
-                int position = i + j * curMaze->size;
-                int cpathIndex = path[i + curMaze->size * j];
+                int position = i + j * size;
+                int cpathIndex = path[i + size * j];
 
                 if (cpathIndex > maxPathIndex) {
                     maxPathIndex = cpathIndex;
@@ -395,7 +331,7 @@ int draw() {
                 glColor3f(0, 0, 0);
 
                 //vertical walls
-                if (curMaze->walls[i + j * curMaze->size][0] == 0) {
+                if (curMaze->walls[i + j * size][0] == 0) {
                     for (int l = 1; l < lineWidth; l++){
                         glBegin(GL_LINES);
                         glVertex2f(-1 + (2 * i) / gridSize + 0.001 * l, 1 - (2 * j) / gridSize);
@@ -406,7 +342,7 @@ int draw() {
                 
 
                 //horizontal walls
-                if (curMaze->walls[i + j * curMaze->size][1] == 0) {
+                if (curMaze->walls[i + j * size][1] == 0) {
                     for (int l = 1; l < lineWidth; l++){
                         glBegin(GL_LINES);
                         glVertex2f(-1 + (2 * i) / gridSize, 1 - (2 * j) / gridSize + 0.001 * l);
@@ -432,9 +368,11 @@ int draw() {
 int main(void)
 {
     depth_first dp;
-    binary_tree bt;
-    curMaze = &bt;
+    curMaze = &dp;
 
+    binary_tree bp;
+    curMaze = &bp;
+    
     srand(time(NULL));
 
     //red is right hand
@@ -446,9 +384,9 @@ int main(void)
     
 
     
-    //solveMazeRH();
+    solveMazeRH(curMaze);
     //pos = start;
-    //solveMazeAstar();
+    //solveMazeAstar(curMaze);
 
     drawMaze.join();
     
