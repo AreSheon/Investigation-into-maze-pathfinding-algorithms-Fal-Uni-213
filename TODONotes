@@ -1,0 +1,30 @@
+these are my brain dumps when I don't have my notebook :)
+
+comparison of mazes on wierd grids :)
+
+Also maybe compare minimum spanning trees on each grid?
+
+standard
+
+square
+
+triangle
+
+hex
+
+
+then wierd ones that don't pwerfectly tessalate -> end up with room esc entities
+
+triangles and squares
+
+8 sides ... etc etc
+
+try come up with formular to generate the graphics automatically
+
+each cell wall has reference to neighbouring one rather than grid position -> can lead to
+
+compare performance of the algorithms given the wierd shapes
+
+
+esentially generate spanning tree
+

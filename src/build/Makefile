@@ -129,101 +129,53 @@ Mazes/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/build
 .PHONY : Mazes/fast
 
-src/main.o: src/main.cxx.o
+src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
-src/main.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/main.cxx.o
-.PHONY : src/main.cxx.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-src/main.i: src/main.cxx.i
+src/main.i: src/main.cpp.i
 .PHONY : src/main.i
 
 # target to preprocess a source file
-src/main.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/main.cxx.i
-.PHONY : src/main.cxx.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-src/main.s: src/main.cxx.s
+src/main.s: src/main.cpp.s
 .PHONY : src/main.s
 
 # target to generate assembly for a file
-src/main.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/main.cxx.s
-.PHONY : src/main.cxx.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
-src/scource/binary_tree.o: src/scource/binary_tree.cxx.o
-.PHONY : src/scource/binary_tree.o
-
-# target to build an object file
-src/scource/binary_tree.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/binary_tree.cxx.o
-.PHONY : src/scource/binary_tree.cxx.o
-
-src/scource/binary_tree.i: src/scource/binary_tree.cxx.i
-.PHONY : src/scource/binary_tree.i
-
-# target to preprocess a source file
-src/scource/binary_tree.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/binary_tree.cxx.i
-.PHONY : src/scource/binary_tree.cxx.i
-
-src/scource/binary_tree.s: src/scource/binary_tree.cxx.s
-.PHONY : src/scource/binary_tree.s
-
-# target to generate assembly for a file
-src/scource/binary_tree.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/binary_tree.cxx.s
-.PHONY : src/scource/binary_tree.cxx.s
-
-src/scource/depth_first.o: src/scource/depth_first.cxx.o
-.PHONY : src/scource/depth_first.o
+src/source/grid.o: src/source/grid.cpp.o
+.PHONY : src/source/grid.o
 
 # target to build an object file
-src/scource/depth_first.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/depth_first.cxx.o
-.PHONY : src/scource/depth_first.cxx.o
+src/source/grid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/grid.cpp.o
+.PHONY : src/source/grid.cpp.o
 
-src/scource/depth_first.i: src/scource/depth_first.cxx.i
-.PHONY : src/scource/depth_first.i
-
-# target to preprocess a source file
-src/scource/depth_first.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/depth_first.cxx.i
-.PHONY : src/scource/depth_first.cxx.i
-
-src/scource/depth_first.s: src/scource/depth_first.cxx.s
-.PHONY : src/scource/depth_first.s
-
-# target to generate assembly for a file
-src/scource/depth_first.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/depth_first.cxx.s
-.PHONY : src/scource/depth_first.cxx.s
-
-src/scource/maze.o: src/scource/maze.cxx.o
-.PHONY : src/scource/maze.o
-
-# target to build an object file
-src/scource/maze.cxx.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/maze.cxx.o
-.PHONY : src/scource/maze.cxx.o
-
-src/scource/maze.i: src/scource/maze.cxx.i
-.PHONY : src/scource/maze.i
+src/source/grid.i: src/source/grid.cpp.i
+.PHONY : src/source/grid.i
 
 # target to preprocess a source file
-src/scource/maze.cxx.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/maze.cxx.i
-.PHONY : src/scource/maze.cxx.i
+src/source/grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/grid.cpp.i
+.PHONY : src/source/grid.cpp.i
 
-src/scource/maze.s: src/scource/maze.cxx.s
-.PHONY : src/scource/maze.s
+src/source/grid.s: src/source/grid.cpp.s
+.PHONY : src/source/grid.s
 
 # target to generate assembly for a file
-src/scource/maze.cxx.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/scource/maze.cxx.s
-.PHONY : src/scource/maze.cxx.s
+src/source/grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/grid.cpp.s
+.PHONY : src/source/grid.cpp.s
 
 # Help Target
 help:
@@ -237,15 +189,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/scource/binary_tree.o"
-	@echo "... src/scource/binary_tree.i"
-	@echo "... src/scource/binary_tree.s"
-	@echo "... src/scource/depth_first.o"
-	@echo "... src/scource/depth_first.i"
-	@echo "... src/scource/depth_first.s"
-	@echo "... src/scource/maze.o"
-	@echo "... src/scource/maze.i"
-	@echo "... src/scource/maze.s"
+	@echo "... src/source/grid.o"
+	@echo "... src/source/grid.i"
+	@echo "... src/source/grid.s"
 .PHONY : help
 
 

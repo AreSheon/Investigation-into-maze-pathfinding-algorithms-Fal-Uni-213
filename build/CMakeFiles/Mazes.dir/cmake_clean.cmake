@@ -1,13 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Mazes.dir/link.d"
-  "CMakeFiles/Mazes.dir/src/main.cxx.o"
-  "CMakeFiles/Mazes.dir/src/main.cxx.o.d"
-  "CMakeFiles/Mazes.dir/src/scource/binary_tree.cxx.o"
-  "CMakeFiles/Mazes.dir/src/scource/binary_tree.cxx.o.d"
-  "CMakeFiles/Mazes.dir/src/scource/depth_first.cxx.o"
-  "CMakeFiles/Mazes.dir/src/scource/depth_first.cxx.o.d"
-  "CMakeFiles/Mazes.dir/src/scource/maze.cxx.o"
-  "CMakeFiles/Mazes.dir/src/scource/maze.cxx.o.d"
+  "CMakeFiles/Mazes.dir/src/main.cpp.o"
+  "CMakeFiles/Mazes.dir/src/main.cpp.o.d"
+  "CMakeFiles/Mazes.dir/src/source/grid.cpp.o"
+  "CMakeFiles/Mazes.dir/src/source/grid.cpp.o.d"
   "Mazes"
   "Mazes.pdb"
 )

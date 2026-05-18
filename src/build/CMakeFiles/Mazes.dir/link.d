@@ -2,10 +2,8 @@ Mazes: \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o \
-  CMakeFiles/Mazes.dir/src/main.cxx.o \
-  CMakeFiles/Mazes.dir/src/scource/maze.cxx.o \
-  CMakeFiles/Mazes.dir/src/scource/depth_first.cxx.o \
-  CMakeFiles/Mazes.dir/src/scource/binary_tree.cxx.o \
+  CMakeFiles/Mazes.dir/src/main.cpp.o \
+  CMakeFiles/Mazes.dir/src/source/grid.cpp.o \
   /usr/lib64/libglfw.so.3.4 \
   /usr/lib64/libGLX.so \
   /usr/lib64/libOpenGL.so \
@@ -48,13 +46,9 @@ Mazes: \
 
 /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o:
 
-CMakeFiles/Mazes.dir/src/main.cxx.o:
+CMakeFiles/Mazes.dir/src/main.cpp.o:
 
-CMakeFiles/Mazes.dir/src/scource/maze.cxx.o:
-
-CMakeFiles/Mazes.dir/src/scource/depth_first.cxx.o:
-
-CMakeFiles/Mazes.dir/src/scource/binary_tree.cxx.o:
+CMakeFiles/Mazes.dir/src/source/grid.cpp.o:
 
 /usr/lib64/libglfw.so.3.4:
 
