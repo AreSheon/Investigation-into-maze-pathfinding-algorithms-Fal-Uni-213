@@ -7,8 +7,9 @@ using namespace general_settings;
 #include "maze.h"
 
 //thank you joe :)
-maze::maze(int size) : visited(new bool[size * size]), walls(new wall[size]) 
+maze::maze(int size) : visited(new bool[size * size]), walls(new wall[size * size]) 
 {
+    //walls = {0};
 }
 
 maze::~maze() {
@@ -21,18 +22,18 @@ void maze::connect(int pos1, int pos2)
 {
     if (pos2 > pos1) {
         if (pos2 == pos1 + 1) {
-            walls[pos2].leftWall = true;
+            walls[pos2].topWall = true;
         }
         else {
-            walls[pos2].topWall = true;
+            walls[pos2].leftWall = true;
         }
     }
     else {
         if (pos1 == pos2 + 1) {
-            walls[pos1].leftWall = true;
+            walls[pos1].topWall = true;
         }
         else {
-            walls[pos1].topWall = true;
+            walls[pos1].leftWall = true;
         }
     }
 }

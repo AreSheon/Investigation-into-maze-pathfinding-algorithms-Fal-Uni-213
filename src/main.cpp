@@ -336,7 +336,7 @@ int draw(maze* curMaze) {
                 glColor3f(0, 0, 0);
 
                 //vertical walls
-                if (curMaze->walls[i + j * size].leftWall == 0) {
+                if (curMaze->walls[i + j * size].topWall == 0) {
                     for (int l = 1; l < lineWidth; l++){
                         glBegin(GL_LINES);
                         glVertex2f(-1 + (2 * i) / gridSize + 0.001 * l, 1 - (2 * j) / gridSize);
@@ -347,7 +347,7 @@ int draw(maze* curMaze) {
                 
 
                 //horizontal walls
-                if (curMaze->walls[i + j * size].topWall == 0) {
+                if (curMaze->walls[i + j * size].leftWall == 0) {
                     for (int l = 1; l < lineWidth; l++){
                         glBegin(GL_LINES);
                         glVertex2f(-1 + (2 * i) / gridSize, 1 - (2 * j) / gridSize + 0.001 * l);
@@ -403,7 +403,7 @@ int main(int argc, char* argv[])
         //pos = start;
         //solveMazeAstar(curMaze);
         
-       /* drawMaze.join(); */
+        //drawMaze.join();
     }
 
     
