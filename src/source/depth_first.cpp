@@ -1,4 +1,5 @@
-#include "depth_first.hxx"
+#include "depth_first.h"
+#include "general_settings.h"
 #include <GLFW/glfw3.h>
 #include <stdio.h>
 #include <iostream>
@@ -8,6 +9,12 @@
 
 using namespace std::this_thread;
 using namespace std::chrono;
+using namespace general_settings;
+
+depth_first::depth_first(int size) : maze(size)
+{
+    
+}
 
 int depth_first::nextCell(int pos, int size)
 {

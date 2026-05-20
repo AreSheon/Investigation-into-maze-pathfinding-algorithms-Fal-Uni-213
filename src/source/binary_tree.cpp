@@ -1,6 +1,7 @@
 //general algorithm from https://weblog.jamisbuck.org/2011/2/1/maze-generation-binary-tree-algorithm
 
-#include "binary_tree.hxx"
+#include "binary_tree.h"
+#include "general_settings.h"
 #include <GLFW/glfw3.h>
 #include <stdio.h>
 #include <iostream>
@@ -10,6 +11,12 @@
 
 using namespace std::this_thread;
 using namespace std::chrono;
+using namespace general_settings;
+
+binary_tree::binary_tree(int size) : maze(size)
+{
+
+}
 
 int binary_tree::nextCell(int pos, int size)
 {

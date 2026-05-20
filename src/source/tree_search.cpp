@@ -1,7 +1,7 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
-#include "tree_search.hxx"
-#include "maze.hxx"
+#include "tree_search.h"
+#include "maze.h"
 
 tree_search::tree_search(maze* mazeToSolve){
     curMaze = mazeToSolve;
@@ -28,7 +28,7 @@ bool tree_search::move(maze* curMaze) {
     switch (dir) {
     case 'E':   
         if ((pos + 1) % size != 0) {
-            if (curMaze->walls[pos + 1][0] == 1) {
+            if (curMaze->walls[pos + 1].leftWall == 1) {
                 //prevPos = pos;
                 pos += 1;
 
@@ -44,7 +44,7 @@ bool tree_search::move(maze* curMaze) {
     break;
     case 'S':
         if (pos < size * (size - 1)) {
-            if (curMaze->walls[pos + size][1] == 1) {
+            if (curMaze->walls[pos + size].topWall == 1) {
                // prevPos = pos;
                 pos += size;
 
@@ -60,7 +60,7 @@ bool tree_search::move(maze* curMaze) {
     break;
     case 'W':
         if (pos % size != 0) {
-            if (curMaze->walls[pos][0] == 1) {
+            if (curMaze->walls[pos].leftWall == 1) {
                // prevPos = pos;
                 pos -= 1;
 
@@ -76,7 +76,7 @@ bool tree_search::move(maze* curMaze) {
     break;
     case 'N':  
         if (pos >= size) {
-            if (curMaze->walls[pos][1] == 1) {
+            if (curMaze->walls[pos].topWall == 1) {
               //  prevPos = pos;
                 pos -= size;
 
@@ -94,5 +94,6 @@ bool tree_search::move(maze* curMaze) {
     default:
         break;
     }
+    return false;//warning as can reach end. in practice can't buuuutt could be as value is char
 }
 

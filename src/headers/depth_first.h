@@ -1,12 +1,13 @@
 #pragma once
 
-#include "maze.hxx"
+#include "maze.h"
 
-class binary_tree: public maze{
-
+class depth_first:public maze
+{
 public:
-    binary_tree() = default;
-    ~binary_tree() = default;
+
+    depth_first(int size);
+    ~depth_first() = default;
 
 protected:
     int nextCell(int pos, int size) override;
@@ -14,4 +15,3 @@ protected:
     void genAlgorithm(int pos, int size) override;
 
 };
-

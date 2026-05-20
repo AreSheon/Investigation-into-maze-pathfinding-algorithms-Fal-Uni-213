@@ -1,6 +1,6 @@
 #pragma once
 
-#include "tree_search.hxx"
+#include "tree_search.h"
 
 class RHS:public tree_search
 {

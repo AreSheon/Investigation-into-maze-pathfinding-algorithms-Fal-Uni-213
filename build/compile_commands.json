@@ -7,8 +7,26 @@
 },
 {
   "directory": "/home/laner/dev/gitRepos/mazePaper/build",
-  "command": "/usr/bin/c++  -I/home/laner/dev/gitRepos/mazePaper/src/headers -g -o CMakeFiles/Mazes.dir/src/source/grid.cpp.o -c /home/laner/dev/gitRepos/mazePaper/src/source/grid.cpp",
-  "file": "/home/laner/dev/gitRepos/mazePaper/src/source/grid.cpp",
-  "output": "CMakeFiles/Mazes.dir/src/source/grid.cpp.o"
+  "command": "/usr/bin/c++  -I/home/laner/dev/gitRepos/mazePaper/src/headers -g -o CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.o -c /home/laner/dev/gitRepos/mazePaper/src/source/binary_tree.cpp",
+  "file": "/home/laner/dev/gitRepos/mazePaper/src/source/binary_tree.cpp",
+  "output": "CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.o"
+},
+{
+  "directory": "/home/laner/dev/gitRepos/mazePaper/build",
+  "command": "/usr/bin/c++  -I/home/laner/dev/gitRepos/mazePaper/src/headers -g -o CMakeFiles/Mazes.dir/src/source/depth_first.cpp.o -c /home/laner/dev/gitRepos/mazePaper/src/source/depth_first.cpp",
+  "file": "/home/laner/dev/gitRepos/mazePaper/src/source/depth_first.cpp",
+  "output": "CMakeFiles/Mazes.dir/src/source/depth_first.cpp.o"
+},
+{
+  "directory": "/home/laner/dev/gitRepos/mazePaper/build",
+  "command": "/usr/bin/c++  -I/home/laner/dev/gitRepos/mazePaper/src/headers -g -o CMakeFiles/Mazes.dir/src/source/maze.cpp.o -c /home/laner/dev/gitRepos/mazePaper/src/source/maze.cpp",
+  "file": "/home/laner/dev/gitRepos/mazePaper/src/source/maze.cpp",
+  "output": "CMakeFiles/Mazes.dir/src/source/maze.cpp.o"
+},
+{
+  "directory": "/home/laner/dev/gitRepos/mazePaper/build",
+  "command": "/usr/bin/c++  -I/home/laner/dev/gitRepos/mazePaper/src/headers -g -o CMakeFiles/Mazes.dir/src/source/tree_search.cpp.o -c /home/laner/dev/gitRepos/mazePaper/src/source/tree_search.cpp",
+  "file": "/home/laner/dev/gitRepos/mazePaper/src/source/tree_search.cpp",
+  "output": "CMakeFiles/Mazes.dir/src/source/tree_search.cpp.o"
 }
 ]

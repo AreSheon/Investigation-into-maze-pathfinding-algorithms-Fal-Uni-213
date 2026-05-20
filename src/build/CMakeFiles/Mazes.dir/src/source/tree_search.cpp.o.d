@@ -1,5 +1,5 @@
-CMakeFiles/Mazes.dir/src/main.cpp.o: \
- /home/laner/dev/gitRepos/mazePaper/src/main.cpp \
+CMakeFiles/Mazes.dir/src/source/tree_search.cpp.o: \
+ /home/laner/dev/gitRepos/mazePaper/src/source/tree_search.cpp \
  /usr/include/stdc-predef.h /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stddef.h \
  /usr/lib/gcc/x86_64-redhat-linux/15/include/stdint.h \
@@ -13,27 +13,22 @@ CMakeFiles/Mazes.dir/src/main.cpp.o: \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h /usr/include/GL/gl.h \
  /usr/include/GL/glext.h /usr/include/KHR/khrplatform.h \
- /usr/include/c++/15/cstdio \
+ /usr/include/c++/15/iostream /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/os_defines.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/cpu_defines.h \
- /usr/include/c++/15/pstl/pstl_config.h /usr/include/stdio.h \
- /usr/lib/gcc/x86_64-redhat-linux/15/include/stdarg.h \
- /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__mbstate_t.h \
- /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
- /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
- /usr/include/bits/types/cookie_io_functions_t.h \
- /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
- /usr/include/bits/floatn-common.h /usr/include/c++/15/iostream \
- /usr/include/c++/15/bits/requires_hosted.h /usr/include/c++/15/ostream \
+ /usr/include/c++/15/pstl/pstl_config.h /usr/include/c++/15/ostream \
  /usr/include/c++/15/bits/ostream.h /usr/include/c++/15/ios \
  /usr/include/c++/15/iosfwd /usr/include/c++/15/bits/stringfwd.h \
  /usr/include/c++/15/bits/memoryfwd.h /usr/include/c++/15/bits/postypes.h \
  /usr/include/c++/15/cwchar /usr/include/wchar.h \
+ /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
+ /usr/lib/gcc/x86_64-redhat-linux/15/include/stdarg.h \
  /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
- /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
- /usr/include/c++/15/exception /usr/include/c++/15/bits/exception.h \
- /usr/include/c++/15/bits/version.h \
+ /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
+ /usr/include/bits/types/FILE.h /usr/include/bits/types/locale_t.h \
+ /usr/include/bits/types/__locale_t.h /usr/include/c++/15/exception \
+ /usr/include/c++/15/bits/exception.h /usr/include/c++/15/bits/version.h \
  /usr/include/c++/15/bits/exception_ptr.h \
  /usr/include/c++/15/bits/exception_defines.h \
  /usr/include/c++/15/bits/cxxabi_init_exception.h \
@@ -114,7 +109,12 @@ CMakeFiles/Mazes.dir/src/main.cpp.o: \
  /usr/include/bits/uintn-identity.h /usr/include/sys/select.h \
  /usr/include/bits/select.h /usr/include/bits/types/sigset_t.h \
  /usr/include/alloca.h /usr/include/bits/stdlib-float.h \
- /usr/include/c++/15/bits/std_abs.h /usr/include/c++/15/cerrno \
+ /usr/include/c++/15/bits/std_abs.h /usr/include/c++/15/cstdio \
+ /usr/include/stdio.h /usr/include/bits/types/__fpos_t.h \
+ /usr/include/bits/types/__fpos64_t.h \
+ /usr/include/bits/types/struct_FILE.h \
+ /usr/include/bits/types/cookie_io_functions_t.h \
+ /usr/include/bits/stdio_lim.h /usr/include/c++/15/cerrno \
  /usr/include/errno.h /usr/include/bits/errno.h \
  /usr/include/linux/errno.h /usr/include/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
@@ -137,16 +137,7 @@ CMakeFiles/Mazes.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/locale_facets.tcc \
  /usr/include/c++/15/bits/basic_ios.tcc \
  /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
- /usr/include/c++/15/bits/istream.tcc /usr/include/c++/15/thread \
- /usr/include/c++/15/bits/std_thread.h \
- /usr/include/c++/15/bits/unique_ptr.h \
- /usr/include/c++/15/bits/this_thread_sleep.h \
- /usr/include/c++/15/bits/chrono.h /usr/include/c++/15/ratio \
- /usr/include/c++/15/cstdint /usr/include/c++/15/limits \
- /usr/include/c++/15/ctime /usr/include/c++/15/bits/parse_numbers.h \
- /usr/include/c++/15/chrono /usr/include/c++/15/cstring \
- /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/15/bits/istream.tcc \
+ /home/laner/dev/gitRepos/mazePaper/src/headers/tree_search.h \
  /home/laner/dev/gitRepos/mazePaper/src/headers/general_settings.h \
- /home/laner/dev/gitRepos/mazePaper/src/headers/maze.h \
- /home/laner/dev/gitRepos/mazePaper/src/headers/depth_first.h \
- /home/laner/dev/gitRepos/mazePaper/src/headers/binary_tree.h
+ /home/laner/dev/gitRepos/mazePaper/src/headers/maze.h
