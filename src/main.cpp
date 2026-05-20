@@ -17,7 +17,7 @@ using namespace general_settings;
 
 int lineWidth = 10;
 
-maze* curMaze;
+
 
 
 
@@ -264,7 +264,7 @@ void solveMazeAstar(maze* curMaze) {
     pos = goal;
 }
 */
-int draw() {
+int draw(maze* curMaze) {
     GLFWwindow* window;
 
     /* Initialize the library */
@@ -372,35 +372,40 @@ int draw() {
 
 int main(int argc, char* argv[])
 {
-
-    if(argc = 2)
+    maze* curMaze = nullptr;
+    if(argc == 2)
     {
         if(std::strcmp(argv[1], "dp") == 0)//pray
         {
-            depth_first dp(size);
-            curMaze = &dp;
+            
+            curMaze = new depth_first(size);
         }else{
-            binary_tree bp(size);
-            curMaze = &bp;
+           
+            curMaze = new binary_tree(size);
         }
     }
     
-    srand(time(NULL));
+    if(curMaze != nullptr){
 
-    //red is right hand
-    //yellow is a*
-    std::thread drawMaze(draw);
+        srand(time(NULL));
+        
+        //red is right hand
+        //yellow is a*
+        //std::thread drawMaze(draw, curMaze);
+        
+        draw(curMaze);
+        
+        curMaze->createMaze();
+        
+        
+        
+        //solveMazeRH(curMaze);
+        //pos = start;
+        //solveMazeAstar(curMaze);
+        
+       /* drawMaze.join(); */
+    }
 
-    
-    curMaze->createMaze();
-    
-
-    
-    //solveMazeRH(curMaze);
-    //pos = start;
-    //solveMazeAstar(curMaze);
-
-    drawMaze.join();
     
     return 0;
 }
