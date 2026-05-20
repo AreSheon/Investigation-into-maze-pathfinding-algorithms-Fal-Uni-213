@@ -3,7 +3,9 @@ Mazes: \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o \
   CMakeFiles/Mazes.dir/src/main.cpp.o \
-  CMakeFiles/Mazes.dir/src/source/grid.cpp.o \
+  CMakeFiles/Mazes.dir/src/source/Grid.cpp.o \
+  CMakeFiles/Mazes.dir/src/source/Cell.cpp.o \
+  CMakeFiles/Mazes.dir/src/source/Passage.cpp.o \
   /usr/lib64/libglfw.so.3.4 \
   /usr/lib64/libGLX.so \
   /usr/lib64/libOpenGL.so \
@@ -48,7 +50,11 @@ Mazes: \
 
 CMakeFiles/Mazes.dir/src/main.cpp.o:
 
-CMakeFiles/Mazes.dir/src/source/grid.cpp.o:
+CMakeFiles/Mazes.dir/src/source/Grid.cpp.o:
+
+CMakeFiles/Mazes.dir/src/source/Cell.cpp.o:
+
+CMakeFiles/Mazes.dir/src/source/Passage.cpp.o:
 
 /usr/lib64/libglfw.so.3.4:
 

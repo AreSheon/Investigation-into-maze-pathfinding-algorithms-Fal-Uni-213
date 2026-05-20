@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/Mazes.dir/link.d CMakeFiles/Mazes.dir/src/main.cpp.o CMakeFiles/Mazes.dir/src/source/grid.cpp.o -o Mazes  /usr/lib64/libglfw.so.3.4 /usr/lib64/libGLX.so /usr/lib64/libOpenGL.so
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/Mazes.dir/link.d CMakeFiles/Mazes.dir/src/main.cpp.o CMakeFiles/Mazes.dir/src/source/Grid.cpp.o CMakeFiles/Mazes.dir/src/source/Cell.cpp.o CMakeFiles/Mazes.dir/src/source/Passage.cpp.o -o Mazes  /usr/lib64/libglfw.so.3.4 /usr/lib64/libGLX.so /usr/lib64/libOpenGL.so

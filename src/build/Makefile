@@ -153,29 +153,77 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/source/grid.o: src/source/grid.cpp.o
-.PHONY : src/source/grid.o
+src/source/Cell.o: src/source/Cell.cpp.o
+.PHONY : src/source/Cell.o
 
 # target to build an object file
-src/source/grid.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/grid.cpp.o
-.PHONY : src/source/grid.cpp.o
+src/source/Cell.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/Cell.cpp.o
+.PHONY : src/source/Cell.cpp.o
 
-src/source/grid.i: src/source/grid.cpp.i
-.PHONY : src/source/grid.i
+src/source/Cell.i: src/source/Cell.cpp.i
+.PHONY : src/source/Cell.i
 
 # target to preprocess a source file
-src/source/grid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/grid.cpp.i
-.PHONY : src/source/grid.cpp.i
+src/source/Cell.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/Cell.cpp.i
+.PHONY : src/source/Cell.cpp.i
 
-src/source/grid.s: src/source/grid.cpp.s
-.PHONY : src/source/grid.s
+src/source/Cell.s: src/source/Cell.cpp.s
+.PHONY : src/source/Cell.s
 
 # target to generate assembly for a file
-src/source/grid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/grid.cpp.s
-.PHONY : src/source/grid.cpp.s
+src/source/Cell.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/Cell.cpp.s
+.PHONY : src/source/Cell.cpp.s
+
+src/source/Grid.o: src/source/Grid.cpp.o
+.PHONY : src/source/Grid.o
+
+# target to build an object file
+src/source/Grid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/Grid.cpp.o
+.PHONY : src/source/Grid.cpp.o
+
+src/source/Grid.i: src/source/Grid.cpp.i
+.PHONY : src/source/Grid.i
+
+# target to preprocess a source file
+src/source/Grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/Grid.cpp.i
+.PHONY : src/source/Grid.cpp.i
+
+src/source/Grid.s: src/source/Grid.cpp.s
+.PHONY : src/source/Grid.s
+
+# target to generate assembly for a file
+src/source/Grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/Grid.cpp.s
+.PHONY : src/source/Grid.cpp.s
+
+src/source/Passage.o: src/source/Passage.cpp.o
+.PHONY : src/source/Passage.o
+
+# target to build an object file
+src/source/Passage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/Passage.cpp.o
+.PHONY : src/source/Passage.cpp.o
+
+src/source/Passage.i: src/source/Passage.cpp.i
+.PHONY : src/source/Passage.i
+
+# target to preprocess a source file
+src/source/Passage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/Passage.cpp.i
+.PHONY : src/source/Passage.cpp.i
+
+src/source/Passage.s: src/source/Passage.cpp.s
+.PHONY : src/source/Passage.s
+
+# target to generate assembly for a file
+src/source/Passage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/Passage.cpp.s
+.PHONY : src/source/Passage.cpp.s
 
 # Help Target
 help:
@@ -189,9 +237,15 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/source/grid.o"
-	@echo "... src/source/grid.i"
-	@echo "... src/source/grid.s"
+	@echo "... src/source/Cell.o"
+	@echo "... src/source/Cell.i"
+	@echo "... src/source/Cell.s"
+	@echo "... src/source/Grid.o"
+	@echo "... src/source/Grid.i"
+	@echo "... src/source/Grid.s"
+	@echo "... src/source/Passage.o"
+	@echo "... src/source/Passage.i"
+	@echo "... src/source/Passage.s"
 .PHONY : help
 
 

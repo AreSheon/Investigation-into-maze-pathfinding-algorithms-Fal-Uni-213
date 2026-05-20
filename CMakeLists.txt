@@ -12,8 +12,9 @@ target_include_directories(Mazes PUBLIC src/headers)#where are the headers store
 target_sources(Mazes
     PRIVATE
         src/main.cpp
-        src/source/grid.cpp
+        src/source/Grid.cpp
         src/source/Cell.cpp
+        src/source/Passage.cpp
 )
 target_link_libraries(Mazes glfw)
 target_link_libraries(Mazes OpenGL::GL)

@@ -1,7 +1,8 @@
-CMakeFiles/Mazes.dir/src/main.cpp.o: \
- /home/laner/dev/gitRepos/mazePaper/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/15/iostream \
- /usr/include/c++/15/bits/requires_hosted.h \
+CMakeFiles/Mazes.dir/src/source/Grid.cpp.o: \
+ /home/laner/dev/gitRepos/mazePaper/src/source/Grid.cpp \
+ /usr/include/stdc-predef.h \
+ /home/laner/dev/gitRepos/mazePaper/src/headers/Cell.h \
+ /usr/include/c++/15/iostream /usr/include/c++/15/bits/requires_hosted.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/15/x86_64-redhat-linux/bits/os_defines.h \
