@@ -86,85 +86,101 @@ CMakeFiles/Mazes.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mazes.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/laner/dev/gitRepos/mazePaper/src/main.cpp -o CMakeFiles/Mazes.dir/src/main.cpp.s
 
-CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.o: CMakeFiles/Mazes.dir/flags.make
-CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.o: /home/laner/dev/gitRepos/mazePaper/src/source/binary_tree.cpp
-CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.o: CMakeFiles/Mazes.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laner/dev/gitRepos/mazePaper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.o -MF CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.o.d -o CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.o -c /home/laner/dev/gitRepos/mazePaper/src/source/binary_tree.cpp
+CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.o: CMakeFiles/Mazes.dir/flags.make
+CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.o: /home/laner/dev/gitRepos/mazePaper/src/source/mazeGen/binary_tree.cpp
+CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.o: CMakeFiles/Mazes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laner/dev/gitRepos/mazePaper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.o -MF CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.o.d -o CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.o -c /home/laner/dev/gitRepos/mazePaper/src/source/mazeGen/binary_tree.cpp
 
-CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/laner/dev/gitRepos/mazePaper/src/source/binary_tree.cpp > CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.i
+CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/laner/dev/gitRepos/mazePaper/src/source/mazeGen/binary_tree.cpp > CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.i
 
-CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/laner/dev/gitRepos/mazePaper/src/source/binary_tree.cpp -o CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.s
+CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/laner/dev/gitRepos/mazePaper/src/source/mazeGen/binary_tree.cpp -o CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.s
 
-CMakeFiles/Mazes.dir/src/source/depth_first.cpp.o: CMakeFiles/Mazes.dir/flags.make
-CMakeFiles/Mazes.dir/src/source/depth_first.cpp.o: /home/laner/dev/gitRepos/mazePaper/src/source/depth_first.cpp
-CMakeFiles/Mazes.dir/src/source/depth_first.cpp.o: CMakeFiles/Mazes.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laner/dev/gitRepos/mazePaper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Mazes.dir/src/source/depth_first.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mazes.dir/src/source/depth_first.cpp.o -MF CMakeFiles/Mazes.dir/src/source/depth_first.cpp.o.d -o CMakeFiles/Mazes.dir/src/source/depth_first.cpp.o -c /home/laner/dev/gitRepos/mazePaper/src/source/depth_first.cpp
+CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.o: CMakeFiles/Mazes.dir/flags.make
+CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.o: /home/laner/dev/gitRepos/mazePaper/src/source/mazeGen/recursive_backtracker.cpp
+CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.o: CMakeFiles/Mazes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laner/dev/gitRepos/mazePaper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.o -MF CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.o.d -o CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.o -c /home/laner/dev/gitRepos/mazePaper/src/source/mazeGen/recursive_backtracker.cpp
 
-CMakeFiles/Mazes.dir/src/source/depth_first.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mazes.dir/src/source/depth_first.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/laner/dev/gitRepos/mazePaper/src/source/depth_first.cpp > CMakeFiles/Mazes.dir/src/source/depth_first.cpp.i
+CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/laner/dev/gitRepos/mazePaper/src/source/mazeGen/recursive_backtracker.cpp > CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.i
 
-CMakeFiles/Mazes.dir/src/source/depth_first.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mazes.dir/src/source/depth_first.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/laner/dev/gitRepos/mazePaper/src/source/depth_first.cpp -o CMakeFiles/Mazes.dir/src/source/depth_first.cpp.s
+CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/laner/dev/gitRepos/mazePaper/src/source/mazeGen/recursive_backtracker.cpp -o CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.s
 
-CMakeFiles/Mazes.dir/src/source/maze.cpp.o: CMakeFiles/Mazes.dir/flags.make
-CMakeFiles/Mazes.dir/src/source/maze.cpp.o: /home/laner/dev/gitRepos/mazePaper/src/source/maze.cpp
-CMakeFiles/Mazes.dir/src/source/maze.cpp.o: CMakeFiles/Mazes.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laner/dev/gitRepos/mazePaper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Mazes.dir/src/source/maze.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mazes.dir/src/source/maze.cpp.o -MF CMakeFiles/Mazes.dir/src/source/maze.cpp.o.d -o CMakeFiles/Mazes.dir/src/source/maze.cpp.o -c /home/laner/dev/gitRepos/mazePaper/src/source/maze.cpp
+CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.o: CMakeFiles/Mazes.dir/flags.make
+CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.o: /home/laner/dev/gitRepos/mazePaper/src/source/mazeGen/maze.cpp
+CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.o: CMakeFiles/Mazes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laner/dev/gitRepos/mazePaper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.o -MF CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.o.d -o CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.o -c /home/laner/dev/gitRepos/mazePaper/src/source/mazeGen/maze.cpp
 
-CMakeFiles/Mazes.dir/src/source/maze.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mazes.dir/src/source/maze.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/laner/dev/gitRepos/mazePaper/src/source/maze.cpp > CMakeFiles/Mazes.dir/src/source/maze.cpp.i
+CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/laner/dev/gitRepos/mazePaper/src/source/mazeGen/maze.cpp > CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.i
 
-CMakeFiles/Mazes.dir/src/source/maze.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mazes.dir/src/source/maze.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/laner/dev/gitRepos/mazePaper/src/source/maze.cpp -o CMakeFiles/Mazes.dir/src/source/maze.cpp.s
+CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/laner/dev/gitRepos/mazePaper/src/source/mazeGen/maze.cpp -o CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.s
 
-CMakeFiles/Mazes.dir/src/source/tree_search.cpp.o: CMakeFiles/Mazes.dir/flags.make
-CMakeFiles/Mazes.dir/src/source/tree_search.cpp.o: /home/laner/dev/gitRepos/mazePaper/src/source/tree_search.cpp
-CMakeFiles/Mazes.dir/src/source/tree_search.cpp.o: CMakeFiles/Mazes.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laner/dev/gitRepos/mazePaper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Mazes.dir/src/source/tree_search.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mazes.dir/src/source/tree_search.cpp.o -MF CMakeFiles/Mazes.dir/src/source/tree_search.cpp.o.d -o CMakeFiles/Mazes.dir/src/source/tree_search.cpp.o -c /home/laner/dev/gitRepos/mazePaper/src/source/tree_search.cpp
+CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.o: CMakeFiles/Mazes.dir/flags.make
+CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.o: /home/laner/dev/gitRepos/mazePaper/src/source/pathfinding/tree_search.cpp
+CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.o: CMakeFiles/Mazes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laner/dev/gitRepos/mazePaper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.o -MF CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.o.d -o CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.o -c /home/laner/dev/gitRepos/mazePaper/src/source/pathfinding/tree_search.cpp
 
-CMakeFiles/Mazes.dir/src/source/tree_search.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mazes.dir/src/source/tree_search.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/laner/dev/gitRepos/mazePaper/src/source/tree_search.cpp > CMakeFiles/Mazes.dir/src/source/tree_search.cpp.i
+CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/laner/dev/gitRepos/mazePaper/src/source/pathfinding/tree_search.cpp > CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.i
 
-CMakeFiles/Mazes.dir/src/source/tree_search.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mazes.dir/src/source/tree_search.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/laner/dev/gitRepos/mazePaper/src/source/tree_search.cpp -o CMakeFiles/Mazes.dir/src/source/tree_search.cpp.s
+CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/laner/dev/gitRepos/mazePaper/src/source/pathfinding/tree_search.cpp -o CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.s
+
+CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.o: CMakeFiles/Mazes.dir/flags.make
+CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.o: /home/laner/dev/gitRepos/mazePaper/src/source/pathfinding/RHS.cpp
+CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.o: CMakeFiles/Mazes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/laner/dev/gitRepos/mazePaper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.o -MF CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.o.d -o CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.o -c /home/laner/dev/gitRepos/mazePaper/src/source/pathfinding/RHS.cpp
+
+CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/laner/dev/gitRepos/mazePaper/src/source/pathfinding/RHS.cpp > CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.i
+
+CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/laner/dev/gitRepos/mazePaper/src/source/pathfinding/RHS.cpp -o CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.s
 
 # Object files for target Mazes
 Mazes_OBJECTS = \
 "CMakeFiles/Mazes.dir/src/main.cpp.o" \
-"CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.o" \
-"CMakeFiles/Mazes.dir/src/source/depth_first.cpp.o" \
-"CMakeFiles/Mazes.dir/src/source/maze.cpp.o" \
-"CMakeFiles/Mazes.dir/src/source/tree_search.cpp.o"
+"CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.o" \
+"CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.o" \
+"CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.o" \
+"CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.o" \
+"CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.o"
 
 # External object files for target Mazes
 Mazes_EXTERNAL_OBJECTS =
 
 Mazes: CMakeFiles/Mazes.dir/src/main.cpp.o
-Mazes: CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.o
-Mazes: CMakeFiles/Mazes.dir/src/source/depth_first.cpp.o
-Mazes: CMakeFiles/Mazes.dir/src/source/maze.cpp.o
-Mazes: CMakeFiles/Mazes.dir/src/source/tree_search.cpp.o
+Mazes: CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.o
+Mazes: CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.o
+Mazes: CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.o
+Mazes: CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.o
+Mazes: CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.o
 Mazes: CMakeFiles/Mazes.dir/build.make
 Mazes: CMakeFiles/Mazes.dir/compiler_depend.ts
 Mazes: /usr/lib64/libglfw.so.3.4
 Mazes: /usr/lib64/libGLX.so
 Mazes: /usr/lib64/libOpenGL.so
 Mazes: CMakeFiles/Mazes.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/laner/dev/gitRepos/mazePaper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Mazes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/laner/dev/gitRepos/mazePaper/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Mazes"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Mazes.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

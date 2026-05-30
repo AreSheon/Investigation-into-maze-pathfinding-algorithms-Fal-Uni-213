@@ -6,10 +6,12 @@
 #include <chrono>
 #include <cstring>
 #include "general_settings.h"
-#include "maze.h"
-#include "depth_first.h"
-#include "binary_tree.h"
-//#include "scource/depth_first.cxx"
+#include "mazeGen/maze.h"
+#include "mazeGen/recursive_backtracker.h"
+#include "mazeGen/binary_tree.h"
+#include "pathfinding/tree_search.h"
+#include "pathfinding/RHS.h"
+//#include "scource/recursive_backtracker.cxx"
 
 using namespace std::this_thread;
 using namespace std::chrono;
@@ -17,12 +19,9 @@ using namespace general_settings;
 
 int lineWidth = 10;
 
-
-
-
-
 //mazeSolving
 int start = 0; // start position
+int end = size * size - 1;
                
 int goal = size * size - 1; // end position
 
@@ -264,7 +263,20 @@ void solveMazeAstar(maze* curMaze) {
     pos = goal;
 }
 */
-int draw(maze* curMaze) {
+
+//JOE pls dont look at this
+
+//does the current search path contain this position.
+bool searchContains(tree_search* curSearch, int position){
+    for(int pos : curSearch->path){
+        if(pos == position){
+            return true;
+        }
+    }
+    return false;
+}
+
+int draw(maze* curMaze, tree_search* curSearch) {
     GLFWwindow* window;
 
     /* Initialize the library */
@@ -281,7 +293,7 @@ int draw(maze* curMaze) {
 
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
-
+    
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {
@@ -289,54 +301,74 @@ int draw(maze* curMaze) {
         glClear(GL_COLOR_BUFFER_BIT);
         float gridSize = size;
         int maxPathIndex = 0;
-
+        
         for (int j = 0; j < size; j++) {
             for (int i = 0; i < size; i++) {
+                
+                int position = i + j * size;
+                
+                //basic squares
+                if (position == start) {
+                    glColor3f(1, 0, 0);
+                }
+                //this hurts buuuuut imma add an end point :)
+                else if(position == end){
+                    glColor3f(.5f, 0, .5f);
+                }else{
 
+                    glColor3f(1, 1, 1);
+                }
+                
+            
+                glBegin(GL_QUADS);
+            
+                glVertex2f(-1 + (2 * i) / gridSize, 1 - (2 * j) / gridSize);
+                glVertex2f(-1 + (2 * i) / gridSize + 2 / gridSize, 1 - (2 * j) / gridSize);
+                glVertex2f(-1 + (2 * i) / gridSize + 2 / gridSize, 1 - ((2 * j) / gridSize) - 2 / gridSize);
+                glVertex2f(-1 + (2 * i) / gridSize, 1 - ((2 * j) / gridSize) - 2 / gridSize);
+            
+                glEnd();
                 // j is y
                 // i is x
 
-                int position = i + j * size;
-                int cpathIndex = path[i + size * j];
+                //int cpathIndex = curSearch->path[i + size * j];
+                
 
-                if (cpathIndex > maxPathIndex) {
-                    maxPathIndex = cpathIndex;
-                }
-                if (position == pos) {
+                //if (cpathIndex > maxPathIndex) {
+                  //  maxPathIndex = cpathIndex;
+                //}
+                if (searchContains(curSearch,position)) {
                     glColor3f(0, 1, 0);
                 }
                 else if (position == start) {
                     glColor3f(1, 0, 0);
                 }
-                else  if (cpathIndex == -1) {
-                    glColor3f(1, 1, 0.4);
-                }
-                else if (mazeBlocks[position][3] != 0) {
-                    glColor3f(0.7, 1, 0.7);
-                }
-                else if (mazeBlocks[position][2] != 0) {
-                    glColor3f(0.6, 0.6, 1);
-                }
-                else if (cpathIndex > 0) {
-                    glColor3f(1, 0.6, 0.6);
+                //this hurts buuuuut imma add an end point :)
+                else if(position == end){
+                    glColor3f(.5f, 0, .5f);
                 }
                 else {
                     glColor3f(1, 1, 1);
                 }
 
-                glBegin(GL_QUADS);
+                //triangles for the
+                glBegin(GL_TRIANGLES);
 
-                glVertex2f(-1 + (2 * i) / gridSize, 1 - (2 * j) / gridSize);
-                glVertex2f(-1 + (2 * i) / gridSize + 2 / gridSize, 1 - (2 * j) / gridSize);
-                glVertex2f(-1 + (2 * i) / gridSize + 2 / gridSize, 1 - ((2 * j) / gridSize) - 2 / gridSize);
-                glVertex2f(-1 + (2 * i) / gridSize, 1 - ((2 * j) / gridSize) - 2 / gridSize);
+                glVertex2f(-1 + (2 * i) / gridSize + .5/gridSize, (1 - (2 * j) / gridSize) - 1/gridSize);
+                
+                glVertex2f(-1 + (2 * i) / gridSize + (2 / gridSize) - .5/gridSize, 1 - (2 * j) / gridSize - .4/gridSize);
+                
+                glVertex2f(-1 + (2 * i) / gridSize + (2 / gridSize) - .5/gridSize, 1 - ((2 * j) / gridSize) - 2 / gridSize + .4/gridSize);
+
+                //glScalef(.5,.5,1);
 
                 glEnd();
+
 
                 glColor3f(0, 0, 0);
 
                 //vertical walls
-                if (curMaze->walls[i + j * size].topWall == 0) {
+                if (curMaze->walls[i + j * size].topWall == false) {
                     for (int l = 1; l < lineWidth; l++){
                         glBegin(GL_LINES);
                         glVertex2f(-1 + (2 * i) / gridSize + 0.001 * l, 1 - (2 * j) / gridSize);
@@ -347,7 +379,7 @@ int draw(maze* curMaze) {
                 
 
                 //horizontal walls
-                if (curMaze->walls[i + j * size].leftWall == 0) {
+                if (curMaze->walls[i + j * size].leftWall == false) {
                     for (int l = 1; l < lineWidth; l++){
                         glBegin(GL_LINES);
                         glVertex2f(-1 + (2 * i) / gridSize, 1 - (2 * j) / gridSize + 0.001 * l);
@@ -378,7 +410,7 @@ int main(int argc, char* argv[])
         if(std::strcmp(argv[1], "dp") == 0)//pray
         {
             
-            curMaze = new depth_first(size);
+            curMaze = new recursive_backtracker(size);
         }else{
            
             curMaze = new binary_tree(size);
@@ -387,22 +419,27 @@ int main(int argc, char* argv[])
     
     if(curMaze != nullptr){
 
-        srand(time(NULL));
-        
-        //red is right hand
+        srand(100);
+               //red is right hand
         //yellow is a*
-        //std::thread drawMaze(draw, curMaze);
         
-        draw(curMaze);
         
         curMaze->createMaze();
+        //generateMaze.detach();
         
         
+        tree_search* curSearch = new RHS(curMaze);
+
+        curSearch->solveMaze(curMaze);
         
-        //solveMazeRH(curMaze);
+        draw(curMaze, curSearch);
+        
+//        curSearch->solveMaze(curMaze);
         //pos = start;
         //solveMazeAstar(curMaze);
         
+        //generateMaze.join();
+
         //drawMaze.join();
     }
 

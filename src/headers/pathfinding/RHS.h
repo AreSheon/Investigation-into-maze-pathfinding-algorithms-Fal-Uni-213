@@ -6,10 +6,16 @@ class RHS:public tree_search
 {
 public:
 
-    RHS() = default;
+    RHS(maze* curMaze);
     ~RHS() = default;
 
-protected:
+private:
+    /** turn right */
+    int incrementRot();
+
+    /** turn left */
+    int decrementRot();
+
 
 public:
     

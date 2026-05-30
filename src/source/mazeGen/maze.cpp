@@ -1,15 +1,13 @@
 #include <GLFW/glfw3.h>
 #include "general_settings.h"
-#include "maze.h"
+#include "mazeGen/maze.h"
 
 using namespace general_settings;
-
-#include "maze.h"
 
 //thank you joe :)
 maze::maze(int size) : visited(new bool[size * size]), walls(new wall[size * size]) 
 {
-    //walls = {0};
+
 }
 
 maze::~maze() {
@@ -38,7 +36,7 @@ void maze::connect(int pos1, int pos2)
     }
 }
 
- void maze::createMaze()
+void maze::createMaze()
 {
     int pos = 0;
       

@@ -147,6 +147,12 @@ CMakeFiles/Mazes.dir/src/main.cpp.o: \
  /usr/include/c++/15/chrono /usr/include/c++/15/cstring \
  /usr/include/string.h /usr/include/strings.h \
  /home/laner/dev/gitRepos/mazePaper/src/headers/general_settings.h \
- /home/laner/dev/gitRepos/mazePaper/src/headers/maze.h \
- /home/laner/dev/gitRepos/mazePaper/src/headers/depth_first.h \
- /home/laner/dev/gitRepos/mazePaper/src/headers/binary_tree.h
+ /home/laner/dev/gitRepos/mazePaper/src/headers/mazeGen/maze.h \
+ /home/laner/dev/gitRepos/mazePaper/src/headers/mazeGen/recursive_backtracker.h \
+ /home/laner/dev/gitRepos/mazePaper/src/headers/mazeGen/binary_tree.h \
+ /home/laner/dev/gitRepos/mazePaper/src/headers/pathfinding/tree_search.h \
+ /usr/include/c++/15/vector /usr/include/c++/15/bits/stl_uninitialized.h \
+ /usr/include/c++/15/bits/stl_vector.h \
+ /usr/include/c++/15/bits/stl_bvector.h \
+ /usr/include/c++/15/bits/vector.tcc \
+ /home/laner/dev/gitRepos/mazePaper/src/headers/pathfinding/RHS.h

@@ -1,6 +1,6 @@
 //general algorithm from https://weblog.jamisbuck.org/2011/2/1/maze-generation-binary-tree-algorithm
 
-#include "binary_tree.h"
+#include "mazeGen/binary_tree.h"
 #include "general_settings.h"
 #include <GLFW/glfw3.h>
 #include <stdio.h>
@@ -53,7 +53,7 @@ void binary_tree::genAlgorithm(int pos, int size)
         visited[i] = 1;
         //get the cell to carve passage too
         int carveCell = i + nextCell(i, size);
-        sleep_for(nanoseconds(delay)); //delay to watch maze getting created
+        //sleep_for(nanoseconds(delay)); //delay to watch maze getting created
         connect(i, carveCell);
         
     }

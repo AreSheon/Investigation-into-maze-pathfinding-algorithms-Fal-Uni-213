@@ -3,10 +3,11 @@ Mazes: \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o \
   CMakeFiles/Mazes.dir/src/main.cpp.o \
-  CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.o \
-  CMakeFiles/Mazes.dir/src/source/depth_first.cpp.o \
-  CMakeFiles/Mazes.dir/src/source/maze.cpp.o \
-  CMakeFiles/Mazes.dir/src/source/tree_search.cpp.o \
+  CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.o \
+  CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.o \
+  CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.o \
+  CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.o \
+  CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.o \
   /usr/lib64/libglfw.so.3.4 \
   /usr/lib64/libGLX.so \
   /usr/lib64/libOpenGL.so \
@@ -51,13 +52,15 @@ Mazes: \
 
 CMakeFiles/Mazes.dir/src/main.cpp.o:
 
-CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.o:
+CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.o:
 
-CMakeFiles/Mazes.dir/src/source/depth_first.cpp.o:
+CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.o:
 
-CMakeFiles/Mazes.dir/src/source/maze.cpp.o:
+CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.o:
 
-CMakeFiles/Mazes.dir/src/source/tree_search.cpp.o:
+CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.o:
+
+CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.o:
 
 /usr/lib64/libglfw.so.3.4:
 

@@ -19,16 +19,13 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
-    \entry{buck_mazes_2015}{book}{}{}
+    \entry{buckMazesProgrammersCode2015a}{book}{}{}
       \name{author}{1}{}{%
         {{hash=8ded4583ad04efd19ba336044a7d2749}{%
            family={Buck},
            familyi={B\bibinitperiod},
            given={Jamis},
            giveni={J\bibinitperiod}}}%
-      }
-      \list{language}{1}{%
-        {eng}%
       }
       \list{location}{1}{%
         {Dallas, Texas ;}%
@@ -51,13 +48,84 @@
       \field{abstract}{Unlock the secrets to creating random mazes! Whether you're a game developer, an algorithm connoisseur, or simply in search of a new puzzle, you're about to level up. Learn algorithms to randomly generate mazes in a variety of shapes, sizes, and dimensions. Bend them into Moebius strips, fold them into cubes, and wrap them around spheres. Stretch them into other dimensions, squeeze them into arbitrary outlines, and tile them in a dizzying variety of ways. From twelve little algorithms, you'll discover a vast reservoir of ideas and inspiration.}
       \field{edition}{1st edition}
       \field{isbn}{978-1-68050-131-5}
-      \field{series}{The {Pragmatic} {Programmers}}
-      \field{shorttitle}{Mazes for programmers}
-      \field{title}{Mazes for programmers: code your own twisty little passages}
+      \field{langid}{english}
+      \field{series}{The {{Pragmatic Programmers}}}
+      \field{shorttitle}{Mazes for Programmers}
+      \field{title}{Mazes for Programmers: Code Your Own Twisty Little Passages}
       \field{year}{2015}
       \keyw{Computer algorithms,Computer programming,Data processing,Maze puzzles}
     \endentry
-    \entry{vijaya_analysis_2024}{inproceedings}{}{}
+    \entry{MazeAlgorithms}{misc}{}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.jamisbuck.org/mazes/}
+      \field{title}{Maze {{Algorithms}}}
+      \field{urlday}{6}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/laner/Zotero/storage/DUXV69VG/mazes.html
+      \endverb
+    \endentry
+    \entry{narendranMazeSolverExploringAlgorithmic2024}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=6374399802e39beadcc4cb057b3bb247}{%
+           family={Narendran},
+           familyi={N\bibinitperiod},
+           given={Advik},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c5f9b0541e5f759daa323c1064dc5000}{%
+           family={Hothri},
+           familyi={H\bibinitperiod},
+           given={Anantha},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a0f1a5d2d969b5112036722e6b9f533a}{%
+           family={Saga},
+           familyi={S\bibinitperiod},
+           given={Hemanth},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f59e1936a56d1c1e4e7aa5191b7076fd}{%
+           family={Sahay},
+           familyi={S\bibinitperiod},
+           given={Apurvanand},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{76daa8532560c0e9fc0512d8d3a0eae0}
+      \strng{fullhash}{b91988958fc708f8987731bd1bfa8911}
+      \strng{fullhashraw}{b91988958fc708f8987731bd1bfa8911}
+      \strng{bibnamehash}{76daa8532560c0e9fc0512d8d3a0eae0}
+      \strng{authorbibnamehash}{76daa8532560c0e9fc0512d8d3a0eae0}
+      \strng{authornamehash}{76daa8532560c0e9fc0512d8d3a0eae0}
+      \strng{authorfullhash}{b91988958fc708f8987731bd1bfa8911}
+      \strng{authorfullhashraw}{b91988958fc708f8987731bd1bfa8911}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The initiative examines the efficiency of various maze-solving algorithms, including breadth-first search (BFS), depth-first search (DFS), A* search, Markov decision processes with policy iteration (MDP PI), value iteration (MDP VI), and an enhanced wall-follower algorithm. The study seeks to discover the best algorithm for the autonomy of navigation in harsh and non-obvious environments, which is a crucial step for robotics applications in logistics, exploration, and rescue operations. In a comparative analysis within a controlled maze environment, each algorithm's performance is evaluated based on path length, execution time, and memory usage. The study highlights the benefits of sophisticated decision-making and optimized pathfinding, particularly in MDP implementations and heuristic-based A* searches, addressing traditional limitations such as high computational costs and susceptibility to specific maze configurations. Results from this study are anticipated to enhance autonomous navigation systems, provide valuable educational insights, and improve operational efficiencies in critical applications.}
+      \field{booktitle}{2024 15th {{International Conference}} on {{Computing Communication}} and {{Networking Technologies}} ({{ICCCNT}})}
+      \field{issn}{2473-7674}
+      \field{month}{6}
+      \field{shorttitle}{{{MazeSolver}}}
+      \field{title}{{{MazeSolver}}: {{Exploring Algorithmic Solutions}} for {{Maze Navigation}}}
+      \field{urlday}{28}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICCCNT61001.2024.10725996
+      \endverb
+      \verb{file}
+      \verb /home/laner/Zotero/storage/9N9BMUTR/Narendran et al. - 2024 - MazeSolver Exploring Algorithmic Solutions for Maze Navigation.pdf
+      \endverb
+      \keyw{A Star Algorithm,Breadth-First Search,Computational efficiency,Decision making,Depth-First Search,Logistics,Markov decision processes,Markov Decision Processes,Measurement,Memory management,Navigation,Policy Iteration,Proposals,Resource management,Stars,Value Iteration,Wall-Follower Algorithm}
+    \endentry
+    \entry{vijayaAnalysisMazeGeneration2024}{inproceedings}{}{}
       \name{author}{5}{}{%
         {{hash=169abfa4ec0c1b5ca98b58814bf85beb}{%
            family={Vijaya},
@@ -97,10 +165,10 @@
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Procedural content generation plays a crucial role in modern game development, offering efficient methods for creating intricate mazes, a prime example of its utility. However, when it comes to homemade maze generation, there’s often a limitation in providing the necessary diversity of mazes to maintain player engagement. Predictability can creep in, diminishing the player’s experience. In this composition, we embark on a comprehensive exploration of three introductory 2-D maze-generation algorithms, firstly, DFS (Depth-First Search), secondly, Recursive description, and lastly Prim’s-Method algorithm. Rather than merely analyzing these algorithms, our focus is on addressing their inherent drawbacks. Specifically, we aim to find solutions to enhance their utility in game development, particularly in terms of improving path lengths and increasing the diversity of generated mazes. In essence, procedural content generation, as exemplified by maze generation algorithms, serves as an indispensable tool for game designers seeking not only to understand the limitations but also to find creative solutions that strike a balance between generating engaging content and maintaining gameplay diversity.}
-      \field{booktitle}{2024 5th {International} {Conference} on {Innovative} {Trends} in {Information} {Technology} ({ICITIIT})}
+      \field{abstract}{Procedural content generation plays a crucial role in modern game development, offering efficient methods for creating intricate mazes, a prime example of its utility. However, when it comes to homemade maze generation, there's often a limitation in providing the necessary diversity of mazes to maintain player engagement. Predictability can creep in, diminishing the player's experience. In this composition, we embark on a comprehensive exploration of three introductory 2-D maze-generation algorithms, firstly, DFS (Depth-First Search), secondly, Recursive description, and lastly Prim's-Method algorithm. Rather than merely analyzing these algorithms, our focus is on addressing their inherent drawbacks. Specifically, we aim to find solutions to enhance their utility in game development, particularly in terms of improving path lengths and increasing the diversity of generated mazes. In essence, procedural content generation, as exemplified by maze generation algorithms, serves as an indispensable tool for game designers seeking not only to understand the limitations but also to find creative solutions that strike a balance between generating engaging content and maintaining gameplay diversity.}
+      \field{booktitle}{2024 5th {{International Conference}} on {{Innovative Trends}} in {{Information Technology}} ({{ICITIIT}})}
       \field{month}{3}
-      \field{title}{Analysis of {Maze} {Generation} {Algorithms}}
+      \field{title}{Analysis of {{Maze Generation Algorithms}}}
       \field{urlday}{16}
       \field{urlmonth}{2}
       \field{urlyear}{2026}
@@ -112,15 +180,9 @@
       \verb 10.1109/ICITIIT61487.2024.10580178
       \endverb
       \verb{file}
-      \verb Full Text PDF:/home/laner/Zotero/storage/L7YCZFU3/Vijaya et al. - 2024 - Analysis of Maze Generation Algorithms.pdf:application/pdf
+      \verb /home/laner/Zotero/storage/L7YCZFU3/Vijaya et al. - 2024 - Analysis of Maze Generation Algorithms.pdf
       \endverb
-      \verb{urlraw}
-      \verb https://ieeexplore.ieee.org/document/10580178
-      \endverb
-      \verb{url}
-      \verb https://ieeexplore.ieee.org/document/10580178
-      \endverb
-      \keyw{Complexity theory,Depth First Hunt,Layout,Market research,Measurement,Prediction algorithms,Prim’s Algorithm,Procedural content generation,Procedural generation,Recursive description,Scalability}
+      \keyw{Complexity theory,Depth First Hunt,Layout,Market research,Measurement,Prediction algorithms,Prim's Algorithm,Procedural content generation,Procedural generation,Recursive description,Scalability}
     \endentry
   \enddatalist
 \endrefsection

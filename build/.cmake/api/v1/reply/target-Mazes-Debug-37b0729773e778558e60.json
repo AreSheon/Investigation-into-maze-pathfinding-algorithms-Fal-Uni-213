@@ -37,7 +37,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 20,
+				"line" : 21,
 				"parent" : 0
 			},
 			{
@@ -89,6 +89,10 @@
 			[
 				{
 					"backtrace" : 7,
+					"path" : "/home/laner/dev/gitRepos/mazePaper/src/headers,"
+				},
+				{
+					"backtrace" : 7,
 					"path" : "/home/laner/dev/gitRepos/mazePaper/src/headers"
 				}
 			],
@@ -99,7 +103,8 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5
 			]
 		}
 	],
@@ -151,7 +156,8 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5
 			]
 		}
 	],
@@ -166,25 +172,31 @@
 		{
 			"backtrace" : 8,
 			"compileGroupIndex" : 0,
-			"path" : "src/source/binary_tree.cpp",
+			"path" : "src/source/mazeGen/binary_tree.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 8,
 			"compileGroupIndex" : 0,
-			"path" : "src/source/depth_first.cpp",
+			"path" : "src/source/mazeGen/recursive_backtracker.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 8,
 			"compileGroupIndex" : 0,
-			"path" : "src/source/maze.cpp",
+			"path" : "src/source/mazeGen/maze.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 8,
 			"compileGroupIndex" : 0,
-			"path" : "src/source/tree_search.cpp",
+			"path" : "src/source/pathfinding/tree_search.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 8,
+			"compileGroupIndex" : 0,
+			"path" : "src/source/pathfinding/RHS.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

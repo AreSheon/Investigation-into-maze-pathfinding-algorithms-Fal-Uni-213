@@ -153,101 +153,125 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/source/binary_tree.o: src/source/binary_tree.cpp.o
-.PHONY : src/source/binary_tree.o
+src/source/mazeGen/binary_tree.o: src/source/mazeGen/binary_tree.cpp.o
+.PHONY : src/source/mazeGen/binary_tree.o
 
 # target to build an object file
-src/source/binary_tree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.o
-.PHONY : src/source/binary_tree.cpp.o
+src/source/mazeGen/binary_tree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.o
+.PHONY : src/source/mazeGen/binary_tree.cpp.o
 
-src/source/binary_tree.i: src/source/binary_tree.cpp.i
-.PHONY : src/source/binary_tree.i
+src/source/mazeGen/binary_tree.i: src/source/mazeGen/binary_tree.cpp.i
+.PHONY : src/source/mazeGen/binary_tree.i
 
 # target to preprocess a source file
-src/source/binary_tree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.i
-.PHONY : src/source/binary_tree.cpp.i
+src/source/mazeGen/binary_tree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.i
+.PHONY : src/source/mazeGen/binary_tree.cpp.i
 
-src/source/binary_tree.s: src/source/binary_tree.cpp.s
-.PHONY : src/source/binary_tree.s
+src/source/mazeGen/binary_tree.s: src/source/mazeGen/binary_tree.cpp.s
+.PHONY : src/source/mazeGen/binary_tree.s
 
 # target to generate assembly for a file
-src/source/binary_tree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/binary_tree.cpp.s
-.PHONY : src/source/binary_tree.cpp.s
+src/source/mazeGen/binary_tree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/mazeGen/binary_tree.cpp.s
+.PHONY : src/source/mazeGen/binary_tree.cpp.s
 
-src/source/depth_first.o: src/source/depth_first.cpp.o
-.PHONY : src/source/depth_first.o
+src/source/mazeGen/maze.o: src/source/mazeGen/maze.cpp.o
+.PHONY : src/source/mazeGen/maze.o
 
 # target to build an object file
-src/source/depth_first.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/depth_first.cpp.o
-.PHONY : src/source/depth_first.cpp.o
+src/source/mazeGen/maze.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.o
+.PHONY : src/source/mazeGen/maze.cpp.o
 
-src/source/depth_first.i: src/source/depth_first.cpp.i
-.PHONY : src/source/depth_first.i
+src/source/mazeGen/maze.i: src/source/mazeGen/maze.cpp.i
+.PHONY : src/source/mazeGen/maze.i
 
 # target to preprocess a source file
-src/source/depth_first.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/depth_first.cpp.i
-.PHONY : src/source/depth_first.cpp.i
+src/source/mazeGen/maze.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.i
+.PHONY : src/source/mazeGen/maze.cpp.i
 
-src/source/depth_first.s: src/source/depth_first.cpp.s
-.PHONY : src/source/depth_first.s
+src/source/mazeGen/maze.s: src/source/mazeGen/maze.cpp.s
+.PHONY : src/source/mazeGen/maze.s
 
 # target to generate assembly for a file
-src/source/depth_first.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/depth_first.cpp.s
-.PHONY : src/source/depth_first.cpp.s
+src/source/mazeGen/maze.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/mazeGen/maze.cpp.s
+.PHONY : src/source/mazeGen/maze.cpp.s
 
-src/source/maze.o: src/source/maze.cpp.o
-.PHONY : src/source/maze.o
+src/source/mazeGen/recursive_backtracker.o: src/source/mazeGen/recursive_backtracker.cpp.o
+.PHONY : src/source/mazeGen/recursive_backtracker.o
 
 # target to build an object file
-src/source/maze.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/maze.cpp.o
-.PHONY : src/source/maze.cpp.o
+src/source/mazeGen/recursive_backtracker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.o
+.PHONY : src/source/mazeGen/recursive_backtracker.cpp.o
 
-src/source/maze.i: src/source/maze.cpp.i
-.PHONY : src/source/maze.i
+src/source/mazeGen/recursive_backtracker.i: src/source/mazeGen/recursive_backtracker.cpp.i
+.PHONY : src/source/mazeGen/recursive_backtracker.i
 
 # target to preprocess a source file
-src/source/maze.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/maze.cpp.i
-.PHONY : src/source/maze.cpp.i
+src/source/mazeGen/recursive_backtracker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.i
+.PHONY : src/source/mazeGen/recursive_backtracker.cpp.i
 
-src/source/maze.s: src/source/maze.cpp.s
-.PHONY : src/source/maze.s
+src/source/mazeGen/recursive_backtracker.s: src/source/mazeGen/recursive_backtracker.cpp.s
+.PHONY : src/source/mazeGen/recursive_backtracker.s
 
 # target to generate assembly for a file
-src/source/maze.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/maze.cpp.s
-.PHONY : src/source/maze.cpp.s
+src/source/mazeGen/recursive_backtracker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/mazeGen/recursive_backtracker.cpp.s
+.PHONY : src/source/mazeGen/recursive_backtracker.cpp.s
 
-src/source/tree_search.o: src/source/tree_search.cpp.o
-.PHONY : src/source/tree_search.o
+src/source/pathfinding/RHS.o: src/source/pathfinding/RHS.cpp.o
+.PHONY : src/source/pathfinding/RHS.o
 
 # target to build an object file
-src/source/tree_search.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/tree_search.cpp.o
-.PHONY : src/source/tree_search.cpp.o
+src/source/pathfinding/RHS.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.o
+.PHONY : src/source/pathfinding/RHS.cpp.o
 
-src/source/tree_search.i: src/source/tree_search.cpp.i
-.PHONY : src/source/tree_search.i
+src/source/pathfinding/RHS.i: src/source/pathfinding/RHS.cpp.i
+.PHONY : src/source/pathfinding/RHS.i
 
 # target to preprocess a source file
-src/source/tree_search.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/tree_search.cpp.i
-.PHONY : src/source/tree_search.cpp.i
+src/source/pathfinding/RHS.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.i
+.PHONY : src/source/pathfinding/RHS.cpp.i
 
-src/source/tree_search.s: src/source/tree_search.cpp.s
-.PHONY : src/source/tree_search.s
+src/source/pathfinding/RHS.s: src/source/pathfinding/RHS.cpp.s
+.PHONY : src/source/pathfinding/RHS.s
 
 # target to generate assembly for a file
-src/source/tree_search.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/tree_search.cpp.s
-.PHONY : src/source/tree_search.cpp.s
+src/source/pathfinding/RHS.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/pathfinding/RHS.cpp.s
+.PHONY : src/source/pathfinding/RHS.cpp.s
+
+src/source/pathfinding/tree_search.o: src/source/pathfinding/tree_search.cpp.o
+.PHONY : src/source/pathfinding/tree_search.o
+
+# target to build an object file
+src/source/pathfinding/tree_search.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.o
+.PHONY : src/source/pathfinding/tree_search.cpp.o
+
+src/source/pathfinding/tree_search.i: src/source/pathfinding/tree_search.cpp.i
+.PHONY : src/source/pathfinding/tree_search.i
+
+# target to preprocess a source file
+src/source/pathfinding/tree_search.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.i
+.PHONY : src/source/pathfinding/tree_search.cpp.i
+
+src/source/pathfinding/tree_search.s: src/source/pathfinding/tree_search.cpp.s
+.PHONY : src/source/pathfinding/tree_search.s
+
+# target to generate assembly for a file
+src/source/pathfinding/tree_search.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Mazes.dir/build.make CMakeFiles/Mazes.dir/src/source/pathfinding/tree_search.cpp.s
+.PHONY : src/source/pathfinding/tree_search.cpp.s
 
 # Help Target
 help:
@@ -261,18 +285,21 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/source/binary_tree.o"
-	@echo "... src/source/binary_tree.i"
-	@echo "... src/source/binary_tree.s"
-	@echo "... src/source/depth_first.o"
-	@echo "... src/source/depth_first.i"
-	@echo "... src/source/depth_first.s"
-	@echo "... src/source/maze.o"
-	@echo "... src/source/maze.i"
-	@echo "... src/source/maze.s"
-	@echo "... src/source/tree_search.o"
-	@echo "... src/source/tree_search.i"
-	@echo "... src/source/tree_search.s"
+	@echo "... src/source/mazeGen/binary_tree.o"
+	@echo "... src/source/mazeGen/binary_tree.i"
+	@echo "... src/source/mazeGen/binary_tree.s"
+	@echo "... src/source/mazeGen/maze.o"
+	@echo "... src/source/mazeGen/maze.i"
+	@echo "... src/source/mazeGen/maze.s"
+	@echo "... src/source/mazeGen/recursive_backtracker.o"
+	@echo "... src/source/mazeGen/recursive_backtracker.i"
+	@echo "... src/source/mazeGen/recursive_backtracker.s"
+	@echo "... src/source/pathfinding/RHS.o"
+	@echo "... src/source/pathfinding/RHS.i"
+	@echo "... src/source/pathfinding/RHS.s"
+	@echo "... src/source/pathfinding/tree_search.o"
+	@echo "... src/source/pathfinding/tree_search.i"
+	@echo "... src/source/pathfinding/tree_search.s"
 .PHONY : help
 
 

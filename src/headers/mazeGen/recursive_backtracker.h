@@ -2,12 +2,12 @@
 
 #include "maze.h"
 
-class depth_first:public maze
+class recursive_backtracker:public maze
 {
 public:
 
-    depth_first(int size);
-    ~depth_first() = default;
+    recursive_backtracker(int size);
+    ~recursive_backtracker() = default;
 
 protected:
     int nextCell(int pos, int size) override;

@@ -1,4 +1,4 @@
-#include "depth_first.h"
+#include "mazeGen/recursive_backtracker.h"
 #include "general_settings.h"
 #include <GLFW/glfw3.h>
 #include <stdio.h>
@@ -11,12 +11,12 @@ using namespace std::this_thread;
 using namespace std::chrono;
 using namespace general_settings;
 
-depth_first::depth_first(int size) : maze(size)
+recursive_backtracker::recursive_backtracker(int size) : maze(size)
 {
     
 }
 
-int depth_first::nextCell(int pos, int size)
+int recursive_backtracker::nextCell(int pos, int size)
 {
     //i = x + width*y;
     
@@ -25,6 +25,7 @@ int depth_first::nextCell(int pos, int size)
     int optionCount = 0;
     int options[4];
 
+    //this is bad. imma need to re do the cells ;-;
 
     //these are the directions?
     //down
@@ -49,14 +50,14 @@ int depth_first::nextCell(int pos, int size)
     return (options[rand() % optionCount]); //random direction
 }
 
-void depth_first::genAlgorithm(int pos, int size)
+void recursive_backtracker::genAlgorithm(int pos, int size)
 {
      visited[pos] = 1;
 
     int next = pos + nextCell(pos, size);
 
     while (next != pos) {
-        sleep_for(nanoseconds(delay)); //delay to watch maze getting created
+        //sleep_for(nanoseconds(delay)); //delay to watch maze getting created
         connect(pos, next);
         pos = next;
         genAlgorithm(pos, size);
