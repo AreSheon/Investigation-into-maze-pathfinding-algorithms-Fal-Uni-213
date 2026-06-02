@@ -65,7 +65,7 @@ void RHS::solveMaze(maze* curMaze){
             if (!move(curMaze)) {
                 rot--;
                 if (!move(curMaze)) {
-                    rot--;
+                  S  rot--;
                     move(curMaze);
                 }
             }

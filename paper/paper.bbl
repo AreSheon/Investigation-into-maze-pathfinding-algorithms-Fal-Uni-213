@@ -55,6 +55,222 @@
       \field{year}{2015}
       \keyw{Computer algorithms,Computer programming,Data processing,Maze puzzles}
     \endentry
+    \entry{candraDijkstrasAStarFinding2020}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=5986c0259b9a617b73d284acb999c9d0}{%
+           family={Candra},
+           familyi={C\bibinitperiod},
+           given={Ade},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d46d46c3542ffb12f5531ca50ada31ae}{%
+           family={Budiman},
+           familyi={B\bibinitperiod},
+           given={Mohammad\bibnamedelima Andri},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=d2add9ccb93b882746b2bcb91a42662a}{%
+           family={Hartanto},
+           familyi={H\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{054e5b66db6dc2daded700cd77a2476d}
+      \strng{fullhash}{054e5b66db6dc2daded700cd77a2476d}
+      \strng{fullhashraw}{054e5b66db6dc2daded700cd77a2476d}
+      \strng{bibnamehash}{054e5b66db6dc2daded700cd77a2476d}
+      \strng{authorbibnamehash}{054e5b66db6dc2daded700cd77a2476d}
+      \strng{authornamehash}{054e5b66db6dc2daded700cd77a2476d}
+      \strng{authorfullhash}{054e5b66db6dc2daded700cd77a2476d}
+      \strng{authorfullhashraw}{054e5b66db6dc2daded700cd77a2476d}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{As one form of the greedy algorithm, Dijkstra's can handle the shortest path search with optimum result in longer search time. Dijkstra's is contrary to A-Star, a best-first search algorithm, which can handle the shortest path search with a faster time but not always optimum. By looking at the advantages and disadvantages of Dijkstra's and A-Star, this tutorial discusses the implementation of the two algorithms in finding the shortest path in routes selection between 24 SPBU (gas stations). The routes are located in Medan City and represented in a directed graph. Moreover, the authors compare Dijkstra's and A-star based on the complexity of Big-Theta ({$\Theta$}) and running time. The results show that the shortest path search between SPBU can be solved with Dijkstra's and A-Star, where in some cases, the routes produced by the two algorithms are different so that the total distance generated is also different. In this case, the running time of A-Star is proven to be faster than Dijkstra's, and it is following A-Star principle which selects the location point based on the best heuristic value while Dijkstra's does not. For the complexity, Dijkstra's is \textbackslash Theta(\textbackslash mathrmn\textasciicircum 2) and A-Star is \textbackslash Theta(\textbackslash mathrmm\textbackslash ast \textbackslash mathrmn), where 0łeq \textbackslash mathrmmłeq \textbackslash mathrmn.}
+      \field{booktitle}{2020 {{International Conference}} on {{Data Science}}, {{Artificial Intelligence}}, and {{Business Analytics}} ({{DATABIA}})}
+      \field{month}{7}
+      \field{shorttitle}{Dijkstra's and {{A-Star}} in {{Finding}} the {{Shortest Path}}}
+      \field{title}{Dijkstra's and {{A-Star}} in {{Finding}} the {{Shortest Path}}: A {{Tutorial}}}
+      \field{urlday}{30}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{28\bibrangedash 32}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/DATABIA50434.2020.9190342
+      \endverb
+      \verb{file}
+      \verb /home/laner/Zotero/storage/RW2YLEUA/Candra et al. - 2020 - Dijkstra's and A-Star in Finding the Shortest Path a Tutorial.pdf
+      \endverb
+      \keyw{A-Star,Big-Theta,Business,Computer science,Data science,Dijkstra's,running time,Shortest path problem,SPBU,Time complexity,Tutorials}
+    \endentry
+    \entry{kimIntelligentMazeGeneration2018}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=54753d2fc8c5c126db659a3b3a7ccf31}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Paul\bibnamedelima Hyunjin},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=2bf9451a3f503501c936c94f1fdc7e2d}{%
+           family={Crawfis},
+           familyi={C\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{ea0d20962748a1b5a6cf4de21ea2c18b}
+      \strng{fullhash}{ea0d20962748a1b5a6cf4de21ea2c18b}
+      \strng{fullhashraw}{ea0d20962748a1b5a6cf4de21ea2c18b}
+      \strng{bibnamehash}{ea0d20962748a1b5a6cf4de21ea2c18b}
+      \strng{authorbibnamehash}{ea0d20962748a1b5a6cf4de21ea2c18b}
+      \strng{authornamehash}{ea0d20962748a1b5a6cf4de21ea2c18b}
+      \strng{authorfullhash}{ea0d20962748a1b5a6cf4de21ea2c18b}
+      \strng{authorfullhashraw}{ea0d20962748a1b5a6cf4de21ea2c18b}
+      \field{extraname}{1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Maze is a puzzle, in which players need to find a path from an entrance to a goal on the maze. Although maze is a puzzle itself, it is also used as a tool in different fields, such as computer game and robotics. Since maze users in different fields may have different purposes of using a maze, different desired properties may be wanted on the maze. This paper provides a method which generates the desired maze when users give desired properties. Our method uses search-based procedural content generation (SBPCG) approach, in which the process repeatedly generate-and-test mazes to obtain a satisfactory maze. Our research focuses on a perfect maze, and existing perfect maze generation algorithms can be used in the SBPCG approach. When the algorithms are used, to obtain a desired maze with a higher probability, our method chooses the best algorithm amongst intelligently. Lastly, we provide several use cases and demonstrate that our method generates desired mazes effectively for each use case.}
+      \field{booktitle}{2018 7th {{International Congress}} on {{Advanced Applied Informatics}} ({{IIAI-AAI}})}
+      \field{month}{7}
+      \field{title}{Intelligent {{Maze Generation Based}} on {{Topological Constraints}}}
+      \field{urlday}{16}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{867\bibrangedash 872}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/IIAI-AAI.2018.00176
+      \endverb
+      \verb{file}
+      \verb /home/laner/Zotero/storage/46ANSVYC/Kim and Crawfis - 2018 - Intelligent Maze Generation Based on Topological Constraints.pdf
+      \endverb
+      \keyw{Computer science,Games,Junctions,Measurement,perfect maze maze generation algorithm search-based procedural content generation,Robots,Shape,Topology}
+    \endentry
+    \entry{kimQuestPerfectPerfectmaze2015}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=54753d2fc8c5c126db659a3b3a7ccf31}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Paul\bibnamedelima Hyunjin},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=2bf9451a3f503501c936c94f1fdc7e2d}{%
+           family={Crawfis},
+           familyi={C\bibinitperiod},
+           given={Roger},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{ea0d20962748a1b5a6cf4de21ea2c18b}
+      \strng{fullhash}{ea0d20962748a1b5a6cf4de21ea2c18b}
+      \strng{fullhashraw}{ea0d20962748a1b5a6cf4de21ea2c18b}
+      \strng{bibnamehash}{ea0d20962748a1b5a6cf4de21ea2c18b}
+      \strng{authorbibnamehash}{ea0d20962748a1b5a6cf4de21ea2c18b}
+      \strng{authornamehash}{ea0d20962748a1b5a6cf4de21ea2c18b}
+      \strng{authorfullhash}{ea0d20962748a1b5a6cf4de21ea2c18b}
+      \strng{authorfullhashraw}{ea0d20962748a1b5a6cf4de21ea2c18b}
+      \field{extraname}{2}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, the quest for the perfect perfect-maze is performed over the search space of perfect mazes using an approach of search-based procedural content generation. Perfect maze construction is rather random with little to no control of the final product. We propose a search-based framework based on attributes or metrics of a constructed maze to provide a foundation for evaluation functions (fitness functions). Since the meaning of ``perfect'' is subjective and different for every designer, we allow designers to construct their own evaluation function to generate the best maze. We have also analyzed each metric's space on an exhaustive enumeration of small-sized mazes to determine allowable, and perhaps desirable, ranges for each metric. Using these metrics, an evaluation function is constructed to search for the ``best'' maze.}
+      \field{booktitle}{2015 {{Computer Games}}: {{AI}}, {{Animation}}, {{Mobile}}, {{Multimedia}}, {{Educational}} and {{Serious Games}} ({{CGAMES}})}
+      \field{month}{7}
+      \field{title}{The Quest for the Perfect Perfect-Maze}
+      \field{urlday}{16}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{65\bibrangedash 72}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/CGames.2015.7272964
+      \endverb
+      \verb{file}
+      \verb /home/laner/Zotero/storage/QJABWD8T/Kim and Crawfis - 2015 - The quest for the perfect perfect-maze.pdf
+      \endverb
+      \keyw{Game level design,Maze evaluation,Measurement,Procedural content generation,Search-based procedural content generation}
+    \endentry
+    \entry{kozlovaExaminationRepresentationalExpression2015}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=fd33562d38d46e3e519415608e92cd06}{%
+           family={Kozlova},
+           familyi={K\bibinitperiod},
+           given={Aliona},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b241a80e7222d29244e86dddaafee6cd}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Joseph\bibnamedelima Alexander},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c68600b0a15876c1ca3fed9aa208a678}{%
+           family={Reading},
+           familyi={R\bibinitperiod},
+           given={Elizabeth},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{83df91f6cbe946c2e80f8a091ed04351}
+      \strng{fullhash}{83df91f6cbe946c2e80f8a091ed04351}
+      \strng{fullhashraw}{83df91f6cbe946c2e80f8a091ed04351}
+      \strng{bibnamehash}{83df91f6cbe946c2e80f8a091ed04351}
+      \strng{authorbibnamehash}{83df91f6cbe946c2e80f8a091ed04351}
+      \strng{authornamehash}{83df91f6cbe946c2e80f8a091ed04351}
+      \strng{authorfullhash}{83df91f6cbe946c2e80f8a091ed04351}
+      \strng{authorfullhashraw}{83df91f6cbe946c2e80f8a091ed04351}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Procedural content generation is widely used in game development, although it does not give an opportunity to generate the whole game level. However, for some game artifacts procedural generation is the preferred way of creation. Mazes are a good example of such artifacts: manual generation of mazes does not provide a variety of combinations and makes games too predictable. This article gives an overview of three basic two-dimensional maze generation algorithms: Depth-first search, Prim's, and Recursive Definition. These algorithms describe three conceptually different approaches to maze generation. The path lengths of the algorithms are compared, and advantages and disadvantages of each algorithm are given.}
+      \field{booktitle}{2015 {{IEEE Conference}} on {{Computational Intelligence}} and {{Games}} ({{CIG}})}
+      \field{issn}{2325-4289}
+      \field{month}{8}
+      \field{title}{Examination of Representational Expression in Maze Generation Algorithms}
+      \field{urlday}{30}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \field{pages}{532\bibrangedash 533}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1109/CIG.2015.7317902
+      \endverb
+      \verb{file}
+      \verb /home/laner/Zotero/storage/2MWN8AF5/Kozlova et al. - 2015 - Examination of representational expression in maze generation algorithms.pdf
+      \endverb
+      \keyw{Algorithm design and analysis,Computer science,Conferences,Games,IEEE members,Prediction algorithms,Statistical analysis}
+    \endentry
+    \entry{kruskalSHORTESTSPANNINGSUBTREE}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=569f9ff2dff516524ca08370ba81ba29}{%
+           family={Kruskal},
+           familyi={K\bibinitperiod},
+           given={Joseph\bibnamedelima B},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{569f9ff2dff516524ca08370ba81ba29}
+      \strng{fullhash}{569f9ff2dff516524ca08370ba81ba29}
+      \strng{fullhashraw}{569f9ff2dff516524ca08370ba81ba29}
+      \strng{bibnamehash}{569f9ff2dff516524ca08370ba81ba29}
+      \strng{authorbibnamehash}{569f9ff2dff516524ca08370ba81ba29}
+      \strng{authornamehash}{569f9ff2dff516524ca08370ba81ba29}
+      \strng{authorfullhash}{569f9ff2dff516524ca08370ba81ba29}
+      \strng{authorfullhashraw}{569f9ff2dff516524ca08370ba81ba29}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{{{ON THE SHORTEST SPANNING SUBTREE OF A GRAPH AND THE TRAVELING SALESMAN PROBLEM}}}
+      \verb{file}
+      \verb /home/laner/Zotero/storage/G2KTJHP8/Kruskal - ON THE SHORTEST SPANNING SUBTREE OF A GRAPH AND THE TRAVELING SALESMAN PROBLEM.pdf
+      \endverb
+    \endentry
     \entry{MazeAlgorithms}{misc}{}{}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
@@ -124,6 +340,55 @@
       \verb /home/laner/Zotero/storage/9N9BMUTR/Narendran et al. - 2024 - MazeSolver Exploring Algorithmic Solutions for Maze Navigation.pdf
       \endverb
       \keyw{A Star Algorithm,Breadth-First Search,Computational efficiency,Decision making,Depth-First Search,Logistics,Markov decision processes,Markov Decision Processes,Measurement,Memory management,Navigation,Policy Iteration,Proposals,Resource management,Stars,Value Iteration,Wall-Follower Algorithm}
+    \endentry
+    \entry{zotero-item-159}{unpublished}{}{}
+      \name{author}{1}{}{%
+        {{hash=c52270bfba897a83d44e1ab14025916d}{%
+           family={{R. C. Prim}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{c52270bfba897a83d44e1ab14025916d}
+      \strng{fullhash}{c52270bfba897a83d44e1ab14025916d}
+      \strng{fullhashraw}{c52270bfba897a83d44e1ab14025916d}
+      \strng{bibnamehash}{c52270bfba897a83d44e1ab14025916d}
+      \strng{authorbibnamehash}{c52270bfba897a83d44e1ab14025916d}
+      \strng{authornamehash}{c52270bfba897a83d44e1ab14025916d}
+      \strng{authorfullhash}{c52270bfba897a83d44e1ab14025916d}
+      \strng{authorfullhashraw}{c52270bfba897a83d44e1ab14025916d}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{title}{Shortest {{Connection Networks}} and {{Some Generalizations}}}
+      \field{year}{1957}
+    \endentry
+    \entry{veritasiumFastestMazeSolvingCompetition2023}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=fb57e6cc4f0191011565336ff8cde407}{%
+           family={{Veritasium}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb57e6cc4f0191011565336ff8cde407}
+      \strng{fullhash}{fb57e6cc4f0191011565336ff8cde407}
+      \strng{fullhashraw}{fb57e6cc4f0191011565336ff8cde407}
+      \strng{bibnamehash}{fb57e6cc4f0191011565336ff8cde407}
+      \strng{authorbibnamehash}{fb57e6cc4f0191011565336ff8cde407}
+      \strng{authornamehash}{fb57e6cc4f0191011565336ff8cde407}
+      \strng{authorfullhash}{fb57e6cc4f0191011565336ff8cde407}
+      \strng{authorfullhashraw}{fb57e6cc4f0191011565336ff8cde407}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Welcome to Micromouse, the fastest maze-solving competition on Earth. Join Onshape's community of over 3 million CAD users by creating a free account here: https://Onshape.pro/Veritasium. Special thanks to our Patreon supporters! Join this community to help us keep our videos free, forever:}
+      \field{month}{5}
+      \field{title}{The {{Fastest Maze-Solving Competition On Earth}}}
+      \field{urlday}{11}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{urldateera}{ce}
     \endentry
     \entry{vijayaAnalysisMazeGeneration2024}{inproceedings}{}{}
       \name{author}{5}{}{%

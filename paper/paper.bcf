@@ -2373,10 +2373,21 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">vijayaAnalysisMazeGeneration2024</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">narendranMazeSolverExploringAlgorithmic2024</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">MazeAlgorithms</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">buckMazesProgrammersCode2015a</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">vijayaAnalysisMazeGeneration2024</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">narendranMazeSolverExploringAlgorithmic2024</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">MazeAlgorithms</bcf:citekey>
     <bcf:citekey order="5" intorder="1">buckMazesProgrammersCode2015a</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">zotero-item-159</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">kruskalSHORTESTSPANNINGSUBTREE</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">kozlovaExaminationRepresentationalExpression2015</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">veritasiumFastestMazeSolvingCompetition2023</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">candraDijkstrasAStarFinding2020</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">kimQuestPerfectPerfectmaze2015</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">zotero-item-159</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">kimIntelligentMazeGeneration2018</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">buckMazesProgrammersCode2015a</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">MazeAlgorithms</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">narendranMazeSolverExploringAlgorithmic2024</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

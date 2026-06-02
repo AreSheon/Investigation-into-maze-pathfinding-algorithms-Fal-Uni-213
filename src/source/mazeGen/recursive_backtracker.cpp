@@ -52,7 +52,7 @@ int recursive_backtracker::nextCell(int pos, int size)
 
 void recursive_backtracker::genAlgorithm(int pos, int size)
 {
-     visited[pos] = 1;
+    visited[pos] = 1;
 
     int next = pos + nextCell(pos, size);
 
